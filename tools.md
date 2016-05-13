@@ -33,4 +33,4 @@ If you choose to use this website as a platform for development, the following l
 - [Charts.js](http://www.chartjs.org/docs/)
 - [Datatable.js](https://www.datatables.net/)
 - jQuery
-
+- Want others? [Open a ticket](https://github.com/jamiefolsom/cfrp-hack/issues) or fork the site, add it [here](https://github.com/jamiefolsom/cfrp-hack/blob/gh-pages/_includes/javascript.html), and [open a pull request](https://github.com/jamiefolsom/cfrp-hack/pulls)!

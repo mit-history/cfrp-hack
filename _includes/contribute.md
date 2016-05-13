@@ -1,0 +1,1 @@
+_Please note, this website is itself a [github repository](https://github.com/jamiefolsom/cfrp-hack/), and we would welcome your input on it. If you have ideas or questions, or you find problems, please [open a ticket](https://github.com/jamiefolsom/cfrp-hack/issues), or better yet, fork it, fix it, and open a [pull request](https://github.com/jamiefolsom/cfrp-hack/pulls)!_
