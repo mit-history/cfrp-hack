@@ -43,4 +43,4 @@ On Friday afternoon, we'll have a chance to talk with researchers and other deve
 - `git add .`
 - `git commit -m "Created hackathon project"`
 - `git push`
-- Open a Pull request against the upstream repo.
+- Open a Pull request against [the upstream repo](https://github.com/jamiefolsom/cfrp-hack/).
