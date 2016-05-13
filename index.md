@@ -8,38 +8,28 @@ This is a starter kit to help you start a project for the CFRP hackathon quickly
 
 ## 1. Get familiar with the data
 
-1. [Read the listing of data tables and definitions](/data)
-2. Explore
-    1. [Install Postman])(https://www.getpostman.com)
-    2. Import [this collection of API requests](https://www.getpostman.com/collections/75eb47f4dd961830b5b9).
-    3. Experiment with the requests in the collection
-3. Ask questions about how data are structured
+The project has generated a lot of different sorts of data 
 
+1. [Read the listing of data tables and definitions](/data)
+2. [Explore](/tools)
+3. Ask questions about how data are structured
 
 ## 2. Choose and define a project
 
-### Look at the suggested project categories
-
-- New tables/views/endpoints
-- Search tools
-- Visualizations
-- Mashups/Linked data
-- Documentation
-
-On Friday afternoon, we'll have a chance to talk with researchers and other developers about possible project ideas. Choose one that interests you. Ask historians and developers any questions you have about how to proceed.
+On Friday afternoon, we'll have a chance to talk with researchers and other developers about possible project ideas. Choose one that interests you. Ask historians and developers any questions you have about how to proceed. In the meantime, have a look at some [suggested project categories](/ideas).
 
 ## 3. Hack!
 
-### Fork this site
-
+### Set up
+- Fork [this site](https://github.com/jamiefolsom/cfrp-hack/)
 - Clone this repo locally; then:
-- `git branch your-name/your-project`
-- `cp project-template.html yourpage.html`
+- `git branch your-project`
+- `cp project-template.html yourpage.html` Or you can create a new `_layout/template-name.html` including tools of your choosing.
 - If there is a request in Postman that serves your purposes, you can click "Generate Code" to get a copy/pasteable API client in your language of choice.
 
 ### Run this site locally
 
-- If you have ruby 2.0+ installed:
+- If you have ruby installed:
 - `gem install bundler`
 - `bundle install`
 - `jekyll serve`
