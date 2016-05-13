@@ -24,6 +24,9 @@ Once Postman is installed, you can also use this button to import the collection
   }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
 
+## JSON View
+
+[JSONView for Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) prints JSON responses in a familiar outline format.
 
 ## Included libraries
 
