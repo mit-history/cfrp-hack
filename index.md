@@ -12,11 +12,11 @@ Some suggested first steps.
 
 ## 1. Get familiar with the data
 
-The project has generated a lot of different sorts of data 
+The project has generated a great deal of data. The first step to making use of it is to understand what it contains.
 
 1. [Read the listing of data tables and definitions](/database).
 2. Install an [API browser](/tools) and Explore.
-3. Ask questions about how data are structured if you have any.
+3. Ask questions about how data are structured if you have any. As a corrollary, we can of course create views and aggregations from the existing data, if there are different schemata that are preferable. Don't hesitate to [make a recommendation](https://github.com/jamiefolsom/cfrp-hack/issues).
 
 ## 2. Choose and define a project
 
@@ -43,4 +43,4 @@ On Friday afternoon, we'll have a chance to talk with researchers and other deve
 - `git add .`
 - `git commit -m "Created hackathon project"`
 - `git push`
-- Open a Pull request against [the upstream repo](https://github.com/jamiefolsom/cfrp-hack/).
+- Open a Pull request against [the upstream repo](https://github.com/jamiefolsom/cfrp-hack/pulls).
