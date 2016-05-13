@@ -16,7 +16,7 @@ Files included as of now (others are being added):
 
 ## Tables and fields
 
-A full list of tables and their fields is available [here](/database).
+A full list of tables and their fields is available [here](/tables).
 
 ## Endpoints and requests
 
