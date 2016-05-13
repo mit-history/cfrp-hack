@@ -216,6 +216,10 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
+    table, tr, td {
+        border: 1px solid black;
+    }
+
     h2 {
         font-size: 32px;
 

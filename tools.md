@@ -6,7 +6,7 @@ permalink: /tools/
 
 ## Postman
 
-Postman is a great API browser. 
+Postman is a RESTful Web API browser.
 
 1. [Install Postman](https://www.getpostman.com)
 2. Import [this collection of API requests](https://www.getpostman.com/collections/75eb47f4dd961830b5b9) into Postman.
