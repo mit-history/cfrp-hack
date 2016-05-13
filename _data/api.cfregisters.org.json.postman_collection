@@ -1,0 +1,388 @@
+{
+	"owner": "30472",
+	"lastUpdatedBy": "30472",
+	"lastRevision": 256095412,
+	"team": null,
+	"id": "61b050b6-3c35-59e9-d60f-38ee813cb1cf",
+	"name": "api.cfregisters.org",
+	"description": "",
+	"remoteLink": "https://www.getpostman.com/collections/75eb47f4dd961830b5b9",
+	"order": [
+		"9d3d40ef-1d58-255c-2304-5ad72a7632ba",
+		"067f35dd-a01e-3044-dd88-192338f44842",
+		"80422c49-2c37-829d-bb88-aa4569d821c9",
+		"db03fb32-11b1-12c5-15b2-60d6146fb8be",
+		"ade34a33-0a8a-a4d0-a876-776d19aedea3",
+		"a82b40b8-678e-ec43-2a00-03e3cca96ffa",
+		"bafb2a1b-e889-b43e-05d6-136ad625d011",
+		"509e83a1-71f0-9f62-381f-66427ee8ec34",
+		"6bf5deb3-0004-a43f-27c3-949646edf8c0"
+	],
+	"requests": [
+		{
+			"folder": null,
+			"id": "067f35dd-a01e-3044-dd88-192338f44842",
+			"name": "Plays 1-100",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-100\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/plays",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "509e83a1-71f0-9f62-381f-66427ee8ec34",
+			"name": "Plays with Totals",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "//Range-Unit: items\n//Range: 0-100\nAccept: application/json; version=1\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://cfrp-api.herokuapp.com/plays_with_totals?order=total.desc",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "6bf5deb3-0004-a43f-27c3-949646edf8c0",
+			"name": "Performances",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-100\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf",
+			"responses": [
+				{
+					"owner": "30472",
+					"lastUpdatedBy": "30472",
+					"lastRevision": 256084051,
+					"request": {
+						"url": "https://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json; version=1\nRange-Unit: items\nRange: 0-100\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"id": "ce88b58d-c05a-8fcd-d380-7297623e003a",
+					"name": "Plays with more than 100 Parterre Seats Sold",
+					"status": "",
+					"responseCode": {
+						"code": 206,
+						"name": "Partial Content",
+						"detail": "The server is delivering only part of the resource due to a range header sent by the client. The range header is used by tools like wget to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams"
+					},
+					"time": "959",
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Location",
+							"key": "Content-Location",
+							"value": "/play_ticket_sales?name=eq.Places%20de%20Parterre&total_sold=gte.100",
+							"description": "An alternate location for the returned data"
+						},
+						{
+							"name": "Content-Range",
+							"key": "Content-Range",
+							"value": "0-100/11442",
+							"description": "Where in a full body message this partial message belongs"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 04 Feb 2015 20:34:12 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "postgrest/0.2.4.9",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "Via",
+							"key": "Via",
+							"value": "1.1 vegur",
+							"description": "Informs the client of proxies through which the response was sent."
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"play_performance_id\":114,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Chevalier à la mode (Le)\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-06-16\",\"total_sold\":147},{\"play_performance_id\":115,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Coupe enchantée (La)\",\"author\":\"La Fontaine (Jean de) ; Champmeslé (Charles Chevillet, sieur de Champmeslé, dit)\",\"genre\":\"comédie\",\"date\":\"1778-06-16\",\"total_sold\":147},{\"play_performance_id\":119,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l’amour (Les)\",\"author\":\"Cailhava de L'Estandoux (Jean-François)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-01\",\"total_sold\":450},{\"play_performance_id\":118,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tambour nocturne ou le Mari devin (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-01\",\"total_sold\":450},{\"play_performance_id\":120,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Dissipateur ou l'Honnête friponne (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-02\",\"total_sold\":203},{\"play_performance_id\":121,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Babillard (Le)\",\"author\":\"Boissy (Louis de)\",\"genre\":\"comédie\",\"date\":\"1778-01-02\",\"total_sold\":203},{\"play_performance_id\":122,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-03\",\"total_sold\":450},{\"play_performance_id\":123,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l’amour (Les)\",\"author\":\"Cailhava de L'Estandoux (Jean-François)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-03\",\"total_sold\":450},{\"play_performance_id\":129,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Monsieur de Pourceaugnac\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-04\",\"total_sold\":450},{\"play_performance_id\":128,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Égoïsme (L')\",\"author\":\"Cailhava de L'Estandoux (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-04\",\"total_sold\":450},{\"play_performance_id\":130,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-05\",\"total_sold\":450},{\"play_performance_id\":131,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Jeune indienne (La)\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"comédie\",\"date\":\"1778-01-05\",\"total_sold\":450},{\"play_performance_id\":132,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Bourgeois gentilhomme (Le)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-06\",\"total_sold\":452},{\"play_performance_id\":134,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-07\",\"total_sold\":450},{\"play_performance_id\":135,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Magnifique (Le)\",\"author\":\"La Motte (Antoine Houdar de)\",\"genre\":\"comédie\",\"date\":\"1778-01-07\",\"total_sold\":450},{\"play_performance_id\":136,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Enfant prodigue ou L'École de la jeunesse (L')\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-08\",\"total_sold\":208},{\"play_performance_id\":137,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Sérénade (La)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-08\",\"total_sold\":208},{\"play_performance_id\":138,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Préjugé à la mode (Le)\",\"author\":\"La Chaussée (Pierre-Claude)\",\"genre\":\"comédie\",\"date\":\"1778-01-09\",\"total_sold\":230},{\"play_performance_id\":139,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Usurier gentilhomme (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1778-01-09\",\"total_sold\":230},{\"play_performance_id\":140,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-10\",\"total_sold\":450},{\"play_performance_id\":141,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Manie des arts ou la Matinée à la mode (La)\",\"author\":\"Rochon de Chabannes (Marc-Antoine-Jacques)\",\"genre\":\"comédie\",\"date\":\"1778-01-10\",\"total_sold\":450},{\"play_performance_id\":142,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Célibataire (Le)\",\"author\":\"Dorat (Claude-Joseph)\",\"genre\":\"comédie\",\"date\":\"1778-01-11\",\"total_sold\":450},{\"play_performance_id\":143,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Cercle ou la Soirée à la mode (Le)\",\"author\":\"Poinsinet (Antoine-Alexandre-Henri)\",\"genre\":\"comédie épisodique\",\"date\":\"1778-01-11\",\"total_sold\":450},{\"play_performance_id\":144,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Britannicus\",\"author\":\"Racine (Jean)\",\"genre\":\"tragédie\",\"date\":\"1778-01-12\",\"total_sold\":450},{\"play_performance_id\":145,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fat puni (Le)\",\"author\":\"Pont-de-Veyle (Antoine de Fériol, comte de)\",\"genre\":\"comédie\",\"date\":\"1778-01-12\",\"total_sold\":450},{\"play_performance_id\":146,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Femmes savantes (Les)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-13\",\"total_sold\":248},{\"play_performance_id\":147,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Retour imprévu (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-13\",\"total_sold\":248},{\"play_performance_id\":148,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Gaston et Baïard ou Gaston et Bayard\",\"author\":\"Belloy (Pierre Laurent de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-14\",\"total_sold\":451},{\"play_performance_id\":149,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Crispin rival de son maître\",\"author\":\"Lesage (Alain-René)\",\"genre\":\"comédie\",\"date\":\"1778-01-14\",\"total_sold\":451},{\"play_performance_id\":151,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Été des coquettes (L')\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-15\",\"total_sold\":291},{\"play_performance_id\":150,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Joueur (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-15\",\"total_sold\":291},{\"play_performance_id\":152,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"École des mères (L')\",\"author\":\"La Chaussée (Pierre-Claude)\",\"genre\":\"comédie\",\"date\":\"1778-01-16\",\"total_sold\":390},{\"play_performance_id\":153,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fourberies de Scapin (Les)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-16\",\"total_sold\":390},{\"play_performance_id\":154,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-17\",\"total_sold\":450},{\"play_performance_id\":155,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Esprit de contradiction (L')\",\"author\":\"Du Fresny (Charles)\",\"genre\":\"comédie\",\"date\":\"1778-01-17\",\"total_sold\":450},{\"play_performance_id\":156,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tambour nocturne ou le Mari devin (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-18\",\"total_sold\":451},{\"play_performance_id\":157,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"George Dandin ou le Mari confondu\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-18\",\"total_sold\":451},{\"play_performance_id\":158,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fanatisme ou Mahomet le prophète (Le)\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1778-01-19\",\"total_sold\":452},{\"play_performance_id\":159,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Gageure imprévue (La)\",\"author\":\"Sedaine (Michel-Jean)\",\"genre\":\"comédie\",\"date\":\"1778-01-19\",\"total_sold\":452},{\"play_performance_id\":160,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Glorieux (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-20\",\"total_sold\":269},{\"play_performance_id\":161,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tuteur amoureux (Le) ou Le Tuteur\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-20\",\"total_sold\":269},{\"play_performance_id\":162,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Alzire ou les Américains\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1778-01-21\",\"total_sold\":450},{\"play_performance_id\":163,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Somnambule (Le)\",\"author\":\"Pont-de-Veyle (Antoine de Fériol, comte de)\",\"genre\":\"comédie\",\"date\":\"1778-01-21\",\"total_sold\":450},{\"play_performance_id\":164,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Métromanie ou le Poète (La)\",\"author\":\"Piron (Alexis)\",\"genre\":\"comédie\",\"date\":\"1778-01-22\",\"total_sold\":281},{\"play_performance_id\":165,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Florentin (Le)\",\"author\":\"La Fontaine (Jean de)\",\"genre\":\"comédie\",\"date\":\"1778-01-22\",\"total_sold\":281},{\"play_performance_id\":166,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Andrienne (L')\",\"author\":\"Baron (Michel Boyron dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-23\",\"total_sold\":239},{\"play_performance_id\":167,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Métamorphose amoureuse (La)\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1778-01-23\",\"total_sold\":239},{\"play_performance_id\":168,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Adélaïde du Guesclin\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1778-01-24\",\"total_sold\":450},{\"play_performance_id\":169,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fausses infidélités (Les)\",\"author\":\"Barthe (Nicolas-Thomas)\",\"genre\":\"comédie\",\"date\":\"1778-01-24\",\"total_sold\":450},{\"play_performance_id\":170,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Turcaret\",\"author\":\"Lesage (Alain-René)\",\"genre\":\"comédie\",\"date\":\"1778-01-25\",\"total_sold\":452},{\"play_performance_id\":171,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Monsieur de Pourceaugnac\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-25\",\"total_sold\":452},{\"play_performance_id\":172,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Iphigénie en Tauride\",\"author\":\"Guimond de La Touche (Claude)\",\"genre\":\"tragédie\",\"date\":\"1778-01-26\",\"total_sold\":450},{\"play_performance_id\":173,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Galant jardinier (Le)\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-26\",\"total_sold\":450},{\"play_performance_id\":174,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tartuffe ou l'Imposteur\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-27\",\"total_sold\":379},{\"play_performance_id\":175,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Cocher supposé (Le)\",\"author\":\"Hauteroche (Noël Lebreton, sieur de)\",\"genre\":\"comédie\",\"date\":\"1778-01-27\",\"total_sold\":379},{\"play_performance_id\":176,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Hypermnestre\",\"author\":\"Le Mierre (Antoine-Marin)\",\"genre\":\"tragédie\",\"date\":\"1778-01-28\",\"total_sold\":450},{\"play_performance_id\":177,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Pygmalion\",\"author\":\"Rousseau (Jean-Jacques)\",\"genre\":\"scène lyrique\",\"date\":\"1778-01-28\",\"total_sold\":450},{\"play_performance_id\":178,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Enfant prodigue ou L'École de la jeunesse (L')\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-29\",\"total_sold\":237},{\"play_performance_id\":179,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Heureusement\",\"author\":\"Rochon de Chabannes (Marc-Antoine-Jacques)\",\"genre\":\"comédie\",\"date\":\"1778-01-29\",\"total_sold\":237},{\"play_performance_id\":180,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Coquette corrigée (La)\",\"author\":\"La Noue (Jean-Baptiste Simon Sauvé de La Noue, dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-30\",\"total_sold\":251},{\"play_performance_id\":181,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Épreuve réciproque (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1778-01-30\",\"total_sold\":251},{\"play_performance_id\":184,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Turcaret\",\"author\":\"Lesage (Alain-René)\",\"genre\":\"comédie\",\"date\":\"1779-01-01\",\"total_sold\":450},{\"play_performance_id\":185,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Grondeur (Le)\",\"author\":\"Palaprat (Jean de)\",\"genre\":\"comédie\",\"date\":\"1779-01-01\",\"total_sold\":450},{\"play_performance_id\":186,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-02\",\"total_sold\":450},{\"play_performance_id\":187,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Chevalier français à Turin (Le)\",\"author\":\"Dorat (Claude-Joseph)\",\"genre\":\"comédie\",\"date\":\"1779-01-02\",\"total_sold\":450},{\"play_performance_id\":188,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Festin de Pierre (Le)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit) / arrangée et versifiée par Corneille (Thomas)\",\"genre\":\"comédie\",\"date\":\"1779-01-03\",\"total_sold\":450},{\"play_performance_id\":189,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Naufrage ou la Pompe funèbre de Crispin (Le) ou Crispin brûlé\",\"author\":\"La Font (Joseph de)\",\"genre\":\"comédie\",\"date\":\"1779-01-03\",\"total_sold\":450},{\"play_performance_id\":190,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-04\",\"total_sold\":450},{\"play_performance_id\":191,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Chevalier français à Londres (Le)\",\"author\":\"Dorat (Claude-Joseph)\",\"genre\":\"comédie\",\"date\":\"1779-01-04\",\"total_sold\":450},{\"play_performance_id\":192,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Légataire universel (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-05\",\"total_sold\":151},{\"play_performance_id\":193,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Avocat Patelin (L')\",\"author\":\"Brueys (David-Augustin de)\",\"genre\":\"comédie\",\"date\":\"1779-01-05\",\"total_sold\":151},{\"play_performance_id\":194,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Gustave Wasa\",\"author\":\"Piron (Alexis)\",\"genre\":\"tragédie\",\"date\":\"1779-01-06\",\"total_sold\":450},{\"play_performance_id\":195,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Médecin malgré lui (Le) / Le Médecin forcé (titre alt.)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1779-01-06\",\"total_sold\":450},{\"play_performance_id\":196,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Métromanie ou le Poète (La)\",\"author\":\"Piron (Alexis)\",\"genre\":\"comédie\",\"date\":\"1779-01-07\",\"total_sold\":199},{\"play_performance_id\":197,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Sérénade (La)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-07\",\"total_sold\":199},{\"play_performance_id\":198,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Joueur (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-08\",\"total_sold\":358},{\"play_performance_id\":199,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Grondeur (Le)\",\"author\":\"Palaprat (Jean de)\",\"genre\":\"comédie\",\"date\":\"1779-01-08\",\"total_sold\":358},{\"play_performance_id\":200,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-09\",\"total_sold\":450},{\"play_performance_id\":201,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Amour diable (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1779-01-09\",\"total_sold\":450},{\"play_performance_id\":202,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Amphitryon\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1779-01-10\",\"total_sold\":450},{\"play_performance_id\":203,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Monsieur de Pourceaugnac\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1779-01-10\",\"total_sold\":450},{\"play_performance_id\":205,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fat puni (Le)\",\"author\":\"Pont-de-Veyle (Antoine de Fériol, comte de)\",\"genre\":\"comédie\",\"date\":\"1779-01-11\",\"total_sold\":450},{\"play_performance_id\":204,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-11\",\"total_sold\":450},{\"play_performance_id\":206,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Comte de Warwick (Le)\",\"author\":\"La Harpe (Jean François de)\",\"genre\":\"tragédie\",\"date\":\"1779-01-13\",\"total_sold\":416},{\"play_performance_id\":207,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Nouveauté (La)\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1779-01-13\",\"total_sold\":416},{\"play_performance_id\":209,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Retour imprévu (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-14\",\"total_sold\":173},{\"play_performance_id\":208,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Dehors trompeurs ou l'Homme du jour (Les)\",\"author\":\"Boissy (Louis de)\",\"genre\":\"comédie\",\"date\":\"1779-01-14\",\"total_sold\":173},{\"play_performance_id\":210,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Homme à bonnes fortunes (L') / L'homme à bonne fortune (titre alt).\",\"author\":\"Baron (Michel Boyron dit)\",\"genre\":\"comédie\",\"date\":\"1779-01-15\",\"total_sold\":259},{\"play_performance_id\":211,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Crispin médecin\",\"author\":\"Hauteroche (Noël Lebreton, sieur de)\",\"genre\":\"comédie\",\"date\":\"1779-01-15\",\"total_sold\":259},{\"play_performance_id\":212,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-16\",\"total_sold\":450},{\"play_performance_id\":213,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Dédit (Le)\",\"author\":\"Du Fresny (Charles)\",\"genre\":\"comédie\",\"date\":\"1779-01-16\",\"total_sold\":450},{\"play_performance_id\":216,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Orphelin de la Chine (L')\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1780-01-01\",\"total_sold\":450},{\"play_performance_id\":217,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l'amitié, de l'amour et de la nature (Les)\",\"author\":\"Dorvigny\",\"genre\":\"comédie\",\"date\":\"1780-01-01\",\"total_sold\":450},{\"play_performance_id\":218,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tartuffe ou l'Imposteur\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1780-01-02\",\"total_sold\":450},{\"play_performance_id\":219,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Trois cousines (Les)\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1780-01-02\",\"total_sold\":450},{\"play_performance_id\":222,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Cid (Le)\",\"author\":\"Corneille (Pierre)\",\"genre\":\"tragi-comédie / tragédie\",\"date\":\"1780-01-03\",\"total_sold\":450},{\"play_performance_id\":223,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l'amitié, de l'amour et de la nature (Les)\",\"author\":\"Dorvigny\",\"genre\":\"comédie\",\"date\":\"1780-01-03\",\"total_sold\":450},{\"play_performance_id\":226,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Légataire universel (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1780-01-04\",\"total_sold\":181},{\"play_performance_id\":227,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Aveugle clairvoyant (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1780-01-04\",\"total_sold\":181},{\"play_performance_id\":229,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l'amitié, de l'amour et de la nature (Les)\",\"author\":\"Dorvigny\",\"genre\":\"comédie\",\"date\":\"1780-01-05\",\"total_sold\":450},{\"play_performance_id\":228,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Alzire ou les Américains\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1780-01-05\",\"total_sold\":450}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"https://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre\",\"pathVariables\":{},\"data\":[],\"headers\":\"Accept: application/json; version=1\\nRange-Unit: items\\nRange: 0-100\\n\",\"dataMode\":\"params\",\"method\":\"GET\",\"tests\":\"\",\"version\":2}",
+					"createdAt": "2016-05-11T21:02:13.000Z",
+					"updatedAt": "2016-05-11T21:02:13.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"folder": null,
+			"id": "80422c49-2c37-829d-bb88-aa4569d821c9",
+			"name": "Plays by Voltaire 1-100",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-100\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/plays?author=eq.Voltaire (François-Marie Arouet dit)",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "9d3d40ef-1d58-255c-2304-5ad72a7632ba",
+			"name": "API root (all available endpoints)",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-200\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "a82b40b8-678e-ec43-2a00-03e3cca96ffa",
+			"name": "Plays with \"mal\" in the title",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-100\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/plays?title=ilike.*mal*",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "ade34a33-0a8a-a4d0-a876-776d19aedea3",
+			"name": "Performances of Le Misanthrope, more than 100 seats sold, between 1710-1720",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-1000\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&date=lt.1720-01-01&date=gte.1710-01-01&title=eq.Misanthrope (Le)",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "bafb2a1b-e889-b43e-05d6-136ad625d011",
+			"name": "Plays by Authors whose names include François",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "//Range-Unit: items\n//Range: 0-100\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/plays?author=ilike.*François*",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf"
+		},
+		{
+			"folder": null,
+			"id": "db03fb32-11b1-12c5-15b2-60d6146fb8be",
+			"name": "Performances with more than 100 parterre seats sold",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "Range-Unit: items\nRange: 0-100\nAccept: application/json\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "61b050b6-3c35-59e9-d60f-38ee813cb1cf",
+			"responses": [
+				{
+					"owner": "30472",
+					"lastUpdatedBy": "30472",
+					"lastRevision": 256084050,
+					"request": {
+						"url": "https://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json; version=1\nRange-Unit: items\nRange: 0-100\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"id": "070b09ab-e9a3-74a1-b58b-4b3a1184389d",
+					"name": "Plays with more than 100 Parterre Seats Sold",
+					"status": "",
+					"responseCode": {
+						"code": 206,
+						"name": "Partial Content",
+						"detail": "The server is delivering only part of the resource due to a range header sent by the client. The range header is used by tools like wget to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams"
+					},
+					"time": "959",
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Location",
+							"key": "Content-Location",
+							"value": "/play_ticket_sales?name=eq.Places%20de%20Parterre&total_sold=gte.100",
+							"description": "An alternate location for the returned data"
+						},
+						{
+							"name": "Content-Range",
+							"key": "Content-Range",
+							"value": "0-100/11442",
+							"description": "Where in a full body message this partial message belongs"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 04 Feb 2015 20:34:12 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "postgrest/0.2.4.9",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "Via",
+							"key": "Via",
+							"value": "1.1 vegur",
+							"description": "Informs the client of proxies through which the response was sent."
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"play_performance_id\":114,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Chevalier à la mode (Le)\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-06-16\",\"total_sold\":147},{\"play_performance_id\":115,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Coupe enchantée (La)\",\"author\":\"La Fontaine (Jean de) ; Champmeslé (Charles Chevillet, sieur de Champmeslé, dit)\",\"genre\":\"comédie\",\"date\":\"1778-06-16\",\"total_sold\":147},{\"play_performance_id\":119,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l’amour (Les)\",\"author\":\"Cailhava de L'Estandoux (Jean-François)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-01\",\"total_sold\":450},{\"play_performance_id\":118,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tambour nocturne ou le Mari devin (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-01\",\"total_sold\":450},{\"play_performance_id\":120,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Dissipateur ou l'Honnête friponne (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-02\",\"total_sold\":203},{\"play_performance_id\":121,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Babillard (Le)\",\"author\":\"Boissy (Louis de)\",\"genre\":\"comédie\",\"date\":\"1778-01-02\",\"total_sold\":203},{\"play_performance_id\":122,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-03\",\"total_sold\":450},{\"play_performance_id\":123,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l’amour (Les)\",\"author\":\"Cailhava de L'Estandoux (Jean-François)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-03\",\"total_sold\":450},{\"play_performance_id\":129,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Monsieur de Pourceaugnac\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-04\",\"total_sold\":450},{\"play_performance_id\":128,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Égoïsme (L')\",\"author\":\"Cailhava de L'Estandoux (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-04\",\"total_sold\":450},{\"play_performance_id\":130,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-05\",\"total_sold\":450},{\"play_performance_id\":131,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Jeune indienne (La)\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"comédie\",\"date\":\"1778-01-05\",\"total_sold\":450},{\"play_performance_id\":132,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Bourgeois gentilhomme (Le)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-06\",\"total_sold\":452},{\"play_performance_id\":134,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-07\",\"total_sold\":450},{\"play_performance_id\":135,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Magnifique (Le)\",\"author\":\"La Motte (Antoine Houdar de)\",\"genre\":\"comédie\",\"date\":\"1778-01-07\",\"total_sold\":450},{\"play_performance_id\":136,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Enfant prodigue ou L'École de la jeunesse (L')\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-08\",\"total_sold\":208},{\"play_performance_id\":137,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Sérénade (La)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-08\",\"total_sold\":208},{\"play_performance_id\":138,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Préjugé à la mode (Le)\",\"author\":\"La Chaussée (Pierre-Claude)\",\"genre\":\"comédie\",\"date\":\"1778-01-09\",\"total_sold\":230},{\"play_performance_id\":139,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Usurier gentilhomme (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1778-01-09\",\"total_sold\":230},{\"play_performance_id\":140,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-10\",\"total_sold\":450},{\"play_performance_id\":141,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Manie des arts ou la Matinée à la mode (La)\",\"author\":\"Rochon de Chabannes (Marc-Antoine-Jacques)\",\"genre\":\"comédie\",\"date\":\"1778-01-10\",\"total_sold\":450},{\"play_performance_id\":142,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Célibataire (Le)\",\"author\":\"Dorat (Claude-Joseph)\",\"genre\":\"comédie\",\"date\":\"1778-01-11\",\"total_sold\":450},{\"play_performance_id\":143,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Cercle ou la Soirée à la mode (Le)\",\"author\":\"Poinsinet (Antoine-Alexandre-Henri)\",\"genre\":\"comédie épisodique\",\"date\":\"1778-01-11\",\"total_sold\":450},{\"play_performance_id\":144,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Britannicus\",\"author\":\"Racine (Jean)\",\"genre\":\"tragédie\",\"date\":\"1778-01-12\",\"total_sold\":450},{\"play_performance_id\":145,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fat puni (Le)\",\"author\":\"Pont-de-Veyle (Antoine de Fériol, comte de)\",\"genre\":\"comédie\",\"date\":\"1778-01-12\",\"total_sold\":450},{\"play_performance_id\":146,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Femmes savantes (Les)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-13\",\"total_sold\":248},{\"play_performance_id\":147,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Retour imprévu (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-13\",\"total_sold\":248},{\"play_performance_id\":148,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Gaston et Baïard ou Gaston et Bayard\",\"author\":\"Belloy (Pierre Laurent de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-14\",\"total_sold\":451},{\"play_performance_id\":149,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Crispin rival de son maître\",\"author\":\"Lesage (Alain-René)\",\"genre\":\"comédie\",\"date\":\"1778-01-14\",\"total_sold\":451},{\"play_performance_id\":151,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Été des coquettes (L')\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-15\",\"total_sold\":291},{\"play_performance_id\":150,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Joueur (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1778-01-15\",\"total_sold\":291},{\"play_performance_id\":152,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"École des mères (L')\",\"author\":\"La Chaussée (Pierre-Claude)\",\"genre\":\"comédie\",\"date\":\"1778-01-16\",\"total_sold\":390},{\"play_performance_id\":153,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fourberies de Scapin (Les)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-16\",\"total_sold\":390},{\"play_performance_id\":154,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Mustapha et Zéangir\",\"author\":\"Chamfort (Sébastien-Roch-Nicolas de)\",\"genre\":\"tragédie\",\"date\":\"1778-01-17\",\"total_sold\":450},{\"play_performance_id\":155,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Esprit de contradiction (L')\",\"author\":\"Du Fresny (Charles)\",\"genre\":\"comédie\",\"date\":\"1778-01-17\",\"total_sold\":450},{\"play_performance_id\":156,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tambour nocturne ou le Mari devin (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-18\",\"total_sold\":451},{\"play_performance_id\":157,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"George Dandin ou le Mari confondu\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-18\",\"total_sold\":451},{\"play_performance_id\":158,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fanatisme ou Mahomet le prophète (Le)\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1778-01-19\",\"total_sold\":452},{\"play_performance_id\":159,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Gageure imprévue (La)\",\"author\":\"Sedaine (Michel-Jean)\",\"genre\":\"comédie\",\"date\":\"1778-01-19\",\"total_sold\":452},{\"play_performance_id\":160,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Glorieux (Le)\",\"author\":\"Destouches\",\"genre\":\"comédie\",\"date\":\"1778-01-20\",\"total_sold\":269},{\"play_performance_id\":161,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tuteur amoureux (Le) ou Le Tuteur\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-20\",\"total_sold\":269},{\"play_performance_id\":162,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Alzire ou les Américains\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1778-01-21\",\"total_sold\":450},{\"play_performance_id\":163,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Somnambule (Le)\",\"author\":\"Pont-de-Veyle (Antoine de Fériol, comte de)\",\"genre\":\"comédie\",\"date\":\"1778-01-21\",\"total_sold\":450},{\"play_performance_id\":164,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Métromanie ou le Poète (La)\",\"author\":\"Piron (Alexis)\",\"genre\":\"comédie\",\"date\":\"1778-01-22\",\"total_sold\":281},{\"play_performance_id\":165,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Florentin (Le)\",\"author\":\"La Fontaine (Jean de)\",\"genre\":\"comédie\",\"date\":\"1778-01-22\",\"total_sold\":281},{\"play_performance_id\":166,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Andrienne (L')\",\"author\":\"Baron (Michel Boyron dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-23\",\"total_sold\":239},{\"play_performance_id\":167,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Métamorphose amoureuse (La)\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1778-01-23\",\"total_sold\":239},{\"play_performance_id\":168,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Adélaïde du Guesclin\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1778-01-24\",\"total_sold\":450},{\"play_performance_id\":169,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fausses infidélités (Les)\",\"author\":\"Barthe (Nicolas-Thomas)\",\"genre\":\"comédie\",\"date\":\"1778-01-24\",\"total_sold\":450},{\"play_performance_id\":170,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Turcaret\",\"author\":\"Lesage (Alain-René)\",\"genre\":\"comédie\",\"date\":\"1778-01-25\",\"total_sold\":452},{\"play_performance_id\":171,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Monsieur de Pourceaugnac\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1778-01-25\",\"total_sold\":452},{\"play_performance_id\":172,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Iphigénie en Tauride\",\"author\":\"Guimond de La Touche (Claude)\",\"genre\":\"tragédie\",\"date\":\"1778-01-26\",\"total_sold\":450},{\"play_performance_id\":173,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Galant jardinier (Le)\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-26\",\"total_sold\":450},{\"play_performance_id\":174,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tartuffe ou l'Imposteur\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-27\",\"total_sold\":379},{\"play_performance_id\":175,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Cocher supposé (Le)\",\"author\":\"Hauteroche (Noël Lebreton, sieur de)\",\"genre\":\"comédie\",\"date\":\"1778-01-27\",\"total_sold\":379},{\"play_performance_id\":176,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Hypermnestre\",\"author\":\"Le Mierre (Antoine-Marin)\",\"genre\":\"tragédie\",\"date\":\"1778-01-28\",\"total_sold\":450},{\"play_performance_id\":177,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Pygmalion\",\"author\":\"Rousseau (Jean-Jacques)\",\"genre\":\"scène lyrique\",\"date\":\"1778-01-28\",\"total_sold\":450},{\"play_performance_id\":178,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Enfant prodigue ou L'École de la jeunesse (L')\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-29\",\"total_sold\":237},{\"play_performance_id\":179,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Heureusement\",\"author\":\"Rochon de Chabannes (Marc-Antoine-Jacques)\",\"genre\":\"comédie\",\"date\":\"1778-01-29\",\"total_sold\":237},{\"play_performance_id\":180,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Coquette corrigée (La)\",\"author\":\"La Noue (Jean-Baptiste Simon Sauvé de La Noue, dit)\",\"genre\":\"comédie\",\"date\":\"1778-01-30\",\"total_sold\":251},{\"play_performance_id\":181,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Épreuve réciproque (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1778-01-30\",\"total_sold\":251},{\"play_performance_id\":184,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Turcaret\",\"author\":\"Lesage (Alain-René)\",\"genre\":\"comédie\",\"date\":\"1779-01-01\",\"total_sold\":450},{\"play_performance_id\":185,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Grondeur (Le)\",\"author\":\"Palaprat (Jean de)\",\"genre\":\"comédie\",\"date\":\"1779-01-01\",\"total_sold\":450},{\"play_performance_id\":186,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-02\",\"total_sold\":450},{\"play_performance_id\":187,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Chevalier français à Turin (Le)\",\"author\":\"Dorat (Claude-Joseph)\",\"genre\":\"comédie\",\"date\":\"1779-01-02\",\"total_sold\":450},{\"play_performance_id\":188,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Festin de Pierre (Le)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit) / arrangée et versifiée par Corneille (Thomas)\",\"genre\":\"comédie\",\"date\":\"1779-01-03\",\"total_sold\":450},{\"play_performance_id\":189,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Naufrage ou la Pompe funèbre de Crispin (Le) ou Crispin brûlé\",\"author\":\"La Font (Joseph de)\",\"genre\":\"comédie\",\"date\":\"1779-01-03\",\"total_sold\":450},{\"play_performance_id\":190,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-04\",\"total_sold\":450},{\"play_performance_id\":191,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Chevalier français à Londres (Le)\",\"author\":\"Dorat (Claude-Joseph)\",\"genre\":\"comédie\",\"date\":\"1779-01-04\",\"total_sold\":450},{\"play_performance_id\":192,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Légataire universel (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-05\",\"total_sold\":151},{\"play_performance_id\":193,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Avocat Patelin (L')\",\"author\":\"Brueys (David-Augustin de)\",\"genre\":\"comédie\",\"date\":\"1779-01-05\",\"total_sold\":151},{\"play_performance_id\":194,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Gustave Wasa\",\"author\":\"Piron (Alexis)\",\"genre\":\"tragédie\",\"date\":\"1779-01-06\",\"total_sold\":450},{\"play_performance_id\":195,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Médecin malgré lui (Le) / Le Médecin forcé (titre alt.)\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1779-01-06\",\"total_sold\":450},{\"play_performance_id\":196,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Métromanie ou le Poète (La)\",\"author\":\"Piron (Alexis)\",\"genre\":\"comédie\",\"date\":\"1779-01-07\",\"total_sold\":199},{\"play_performance_id\":197,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Sérénade (La)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-07\",\"total_sold\":199},{\"play_performance_id\":198,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Joueur (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-08\",\"total_sold\":358},{\"play_performance_id\":199,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Grondeur (Le)\",\"author\":\"Palaprat (Jean de)\",\"genre\":\"comédie\",\"date\":\"1779-01-08\",\"total_sold\":358},{\"play_performance_id\":200,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-09\",\"total_sold\":450},{\"play_performance_id\":201,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Amour diable (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1779-01-09\",\"total_sold\":450},{\"play_performance_id\":202,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Amphitryon\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1779-01-10\",\"total_sold\":450},{\"play_performance_id\":203,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Monsieur de Pourceaugnac\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie-ballet\",\"date\":\"1779-01-10\",\"total_sold\":450},{\"play_performance_id\":205,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Fat puni (Le)\",\"author\":\"Pont-de-Veyle (Antoine de Fériol, comte de)\",\"genre\":\"comédie\",\"date\":\"1779-01-11\",\"total_sold\":450},{\"play_performance_id\":204,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-11\",\"total_sold\":450},{\"play_performance_id\":206,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Comte de Warwick (Le)\",\"author\":\"La Harpe (Jean François de)\",\"genre\":\"tragédie\",\"date\":\"1779-01-13\",\"total_sold\":416},{\"play_performance_id\":207,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Nouveauté (La)\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1779-01-13\",\"total_sold\":416},{\"play_performance_id\":209,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Retour imprévu (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1779-01-14\",\"total_sold\":173},{\"play_performance_id\":208,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Dehors trompeurs ou l'Homme du jour (Les)\",\"author\":\"Boissy (Louis de)\",\"genre\":\"comédie\",\"date\":\"1779-01-14\",\"total_sold\":173},{\"play_performance_id\":210,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Homme à bonnes fortunes (L') / L'homme à bonne fortune (titre alt).\",\"author\":\"Baron (Michel Boyron dit)\",\"genre\":\"comédie\",\"date\":\"1779-01-15\",\"total_sold\":259},{\"play_performance_id\":211,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Crispin médecin\",\"author\":\"Hauteroche (Noël Lebreton, sieur de)\",\"genre\":\"comédie\",\"date\":\"1779-01-15\",\"total_sold\":259},{\"play_performance_id\":212,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Œdipe chez Admète\",\"author\":\"Ducis (Jean-François)\",\"genre\":\"tragédie\",\"date\":\"1779-01-16\",\"total_sold\":450},{\"play_performance_id\":213,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Dédit (Le)\",\"author\":\"Du Fresny (Charles)\",\"genre\":\"comédie\",\"date\":\"1779-01-16\",\"total_sold\":450},{\"play_performance_id\":216,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Orphelin de la Chine (L')\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1780-01-01\",\"total_sold\":450},{\"play_performance_id\":217,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l'amitié, de l'amour et de la nature (Les)\",\"author\":\"Dorvigny\",\"genre\":\"comédie\",\"date\":\"1780-01-01\",\"total_sold\":450},{\"play_performance_id\":218,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Tartuffe ou l'Imposteur\",\"author\":\"Molière (Jean-Baptiste Poquelin dit)\",\"genre\":\"comédie\",\"date\":\"1780-01-02\",\"total_sold\":450},{\"play_performance_id\":219,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Trois cousines (Les)\",\"author\":\"Dancourt (Florent Carton dit)\",\"genre\":\"comédie\",\"date\":\"1780-01-02\",\"total_sold\":450},{\"play_performance_id\":222,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Cid (Le)\",\"author\":\"Corneille (Pierre)\",\"genre\":\"tragi-comédie / tragédie\",\"date\":\"1780-01-03\",\"total_sold\":450},{\"play_performance_id\":223,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l'amitié, de l'amour et de la nature (Les)\",\"author\":\"Dorvigny\",\"genre\":\"comédie\",\"date\":\"1780-01-03\",\"total_sold\":450},{\"play_performance_id\":226,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Légataire universel (Le)\",\"author\":\"Regnard (Jean-François)\",\"genre\":\"comédie\",\"date\":\"1780-01-04\",\"total_sold\":181},{\"play_performance_id\":227,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Aveugle clairvoyant (L')\",\"author\":\"Legrand (Marc-Antoine)\",\"genre\":\"comédie\",\"date\":\"1780-01-04\",\"total_sold\":181},{\"play_performance_id\":229,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Étrennes de l'amitié, de l'amour et de la nature (Les)\",\"author\":\"Dorvigny\",\"genre\":\"comédie\",\"date\":\"1780-01-05\",\"total_sold\":450},{\"play_performance_id\":228,\"seating_capacity\":6,\"name\":\"Places de Parterre\",\"title\":\"Alzire ou les Américains\",\"author\":\"Voltaire (François-Marie Arouet dit)\",\"genre\":\"tragédie\",\"date\":\"1780-01-05\",\"total_sold\":450}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"https://api.cfregisters.org/play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre\",\"pathVariables\":{},\"data\":[],\"headers\":\"Accept: application/json; version=1\\nRange-Unit: items\\nRange: 0-100\\n\",\"dataMode\":\"params\",\"method\":\"GET\",\"tests\":\"\",\"version\":2}",
+					"createdAt": "2016-05-11T21:02:13.000Z",
+					"updatedAt": "2016-05-11T21:02:13.000Z",
+					"write": true
+				}
+			]
+		}
+	]
+}
