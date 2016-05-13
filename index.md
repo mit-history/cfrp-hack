@@ -4,7 +4,11 @@ layout: default
 
 # Bienvenue!
 
-This is a starter kit to help you start a project for the CFRP hackathon quickly. Feel free to use as much or as little of these resources and ideas as you find useful. Some suggested first steps.
+This is a starter kit to help you start a project for the CFRP hackathon quickly. Feel free to use as much or as little of these resources and ideas as you find useful.
+
+> _Please note, this website is itself a [github repository](https://github.com/jamiefolsom/cfrp-hack/), and we would welcome your input on it. If you have ideas or questions, or you find problems, please [open a ticket](https://github.com/jamiefolsom/cfrp-hack/issues), or better yet, fork it, fix it, and open a [pull request](https://github.com/jamiefolsom/cfrp-hack/pulls)!_
+
+Some suggested first steps.
 
 ## 1. Get familiar with the data
 

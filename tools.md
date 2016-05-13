@@ -12,6 +12,7 @@ Postman is a RESTful Web API browser.
 2. Import [this collection of API requests](https://www.getpostman.com/collections/75eb47f4dd961830b5b9) into Postman.
 3. Experiment with the requests in the collection
 
+Once Postman is installed, you can also use this button to import the collection of sample requests.
 <div class="postman-run-button" data-postman-action="collection/import" data-postman-var-1="75eb47f4dd961830b5b9"></div>
 <script type="text/javascript">
   (function (p,o,s,t,m,a,n) {
@@ -22,3 +23,14 @@ Postman is a RESTful Web API browser.
     ));
   }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
+
+
+## Included libraries
+
+If you choose to use this website as a platform for development, the following libraries are installed for you:
+
+- [D3.js](https://github.com/d3/d3/wiki)
+- [Charts.js](http://www.chartjs.org/docs/)
+- [Datatable.js](https://www.datatables.net/)
+- jQuery
+
