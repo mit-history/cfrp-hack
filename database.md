@@ -4,11 +4,11 @@ title: Tables
 permalink: /tables
 ---
 
-## Tables
-
 Below find a list of the most relevant tables in the CFRP database, with most of their relevant fields. Omitted are adminstrative tables, timestamp columns, and similar plumbing.
 
-NB: All of the data from these tables is accessible via the [REST API endpoints](/endpoints).
+NB: All of the data from these tables is accessible via the [REST API endpoints](/endpoints). 
+
+Also, there is a complete dump of the database, in PostgreSQL compatible dumpfile format [here](/assets/data/cfrp-database.dump).
 
 ### Registers
 
