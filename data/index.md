@@ -24,4 +24,4 @@ A full list of tables and their fields is available [here](/database).
 
 ## Endpoints and requests
 
-A full list of REST API endpoints is available [here](/endpoints).
+A full list of REST API endpoints is available [here](/endpoints), and a prefabricated set of requests can be downloaded on our [tools page](/tools).
