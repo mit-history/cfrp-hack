@@ -14,11 +14,11 @@ Use one of the included tools, or one of your own choosing, to create a visual r
 
 ### Mashups/Linked data
 
-Connect RCF Data with an external source
+Connect RCF Data with an external source.
 
 ### New tables/views/endpoints
 
-Suggest, or build new data schemata, views or refactorings for the RCF data
+Suggest, or build new data schemata, views or refactorings for the RCF data.
 
 ### Documentation
 

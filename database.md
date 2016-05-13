@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Database
-permalink: /database
+title: Tables
+permalink: /tables
 ---
 
 ## Tables

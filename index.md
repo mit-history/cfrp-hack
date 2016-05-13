@@ -4,7 +4,7 @@ layout: default
 
 # Bienvenue!
 
-This is a starter kit to help you start a project for the CFRP hackathon quickly. Feel free to use as much or as little of these resources and ideas as you find useful.
+This is a starter kit to help you start a project for the [CFRP](http://cfregisters.org) hackathon quickly. Feel free to use as much or as little of these resources and ideas as you find useful.
 
 > _Please note, this website is itself a [github repository](https://github.com/jamiefolsom/cfrp-hack/), and we would welcome your input on it. If you have ideas or questions, or you find problems, please [open a ticket](https://github.com/jamiefolsom/cfrp-hack/issues), or better yet, fork it, fix it, and open a [pull request](https://github.com/jamiefolsom/cfrp-hack/pulls)!_
 
@@ -14,9 +14,9 @@ Some suggested first steps.
 
 The project has generated a lot of different sorts of data 
 
-1. [Read the listing of data tables and definitions](/data)
-2. [Explore](/tools)
-3. Ask questions about how data are structured
+1. [Read the listing of data tables and definitions](/database).
+2. Install an [API browser](/tools) and Explore.
+3. Ask questions about how data are structured if you have any.
 
 ## 2. Choose and define a project
 
