@@ -28,7 +28,6 @@ On Friday afternoon, we'll have a chance to talk with researchers and other deve
 - Fork [this site](https://github.com/jamiefolsom/cfrp-hack/)
 - Clone this repo locally; then:
 - `git branch your-project`
-- `cp project-template.html yourpage.html` Or you can create a new `_layout/template-name.html` including tools of your choosing.
 - If there is a request in Postman that serves your purposes, you can click "Generate Code" to get a copy/pasteable API client in your language of choice.
 
 ### Run this site locally
@@ -40,6 +39,7 @@ On Friday afternoon, we'll have a chance to talk with researchers and other deve
 
 ### Add your project to the site
 
+- Code!
 - `git add .`
 - `git commit -m "Created hackathon project"`
 - `git push`
