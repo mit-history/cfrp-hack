@@ -1,20 +1,19 @@
 ---
-layout: post
-title:  "JSON API request examples"
-date:   2016-05-12 13:45:51 -0400
-categories: tools examples
+layout: page
+title: Data
+permalink: /data/
 ---
 
 Here are examples of some requests to the HTTP (REST) data API. This collection includes: 
 
-Plays 1-100
-Plays with Totals
-play_ticket_sales?total_sold=gte.100&name=eq.Places de Parterre
-plays?author=eq.Voltaire (François-Marie Arouet dit)
-plays_with_totals?order=total.desc
-plays?title=ilike.*mal*
-play_ticket_sales?total_sold=gte.100&date=lt.1720-01-01&date=gte.1710-01-01&title=eq.Misanthrope (Le)
-plays?author=ilike.*François*
+- First 100 Plays
+- All Plays with total revenue
+- Revenue on performances with more than 100 parterre ticket sales
+- Plays by Voltaire
+- plays_with_totals?order=total.desc
+- plays?title=ilike.*mal*
+- play_ticket_sales?total_sold=gte.100&date=lt.1720-01-01&date=gte.1710-01-01&title=eq.Misanthrope (Le)
+- plays?author=ilike.*François*
 
 <div class="postman-run-button"
 data-postman-action="collection/import"
