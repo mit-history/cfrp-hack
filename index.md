@@ -14,7 +14,7 @@ Some suggested first steps.
 
 The project has generated a great deal of data. The first step to making use of it is to understand what it contains.
 
-1. [Read the listing of data tables and definitions](/database).
+1. [Read the listing of data tables and definitions](/tables).
 2. Install an [API browser](/tools) and Explore.
 3. Ask questions about how data are structured if you have any. 
 
