@@ -22,7 +22,7 @@ The project has generated a great deal of data. The first step to making use of 
 
 ## 2. Choose and define a project
 
-On Friday afternoon, we'll have a chance to talk with researchers and other developers about possible project ideas. Choose one that interests you. Ask historians and developers any questions you have about how to proceed. In the meantime, have a look at some [suggested project categories](/ideas).
+On Friday afternoon, we'll have a chance to talk with researchers and other developers about possible project ideas. Choose one that interests you. Ask historians and developers any questions you have about how to proceed. In the meantime, have a look at some [suggested project categories](/ideas), or [submit an idea here](http://goo.gl/forms/siFSg2uBcc3hOMho1). 
 
 ## 3. Hack!
 
