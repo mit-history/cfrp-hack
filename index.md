@@ -16,7 +16,8 @@ The project has generated a great deal of data. The first step to making use of 
 
 1. [Read the listing of data tables and definitions](/tables).
 2. Install an [API browser](/tools) and Explore.
-3. Ask questions about how data are structured if you have any. 
+3. OR, you can [run SQL queries against the data in denormalised form](/starschema)
+4. Ask questions about how data are structured if you have any.
 
 > _We can of course create views and aggregations from the existing data, if there are different schemata that are preferable. Don't hesitate to [make a recommendation](https://github.com/jamiefolsom/cfrp-hack/issues)._
 
