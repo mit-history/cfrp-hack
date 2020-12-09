@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Data
-topnav: false
-permalink: /data/
+title: Receipt Registers
+topnav: true
+permalink: /receipts/
 ---
 
-## Datasets
+## Receipt Registers
 
 This repository contains JSON and CSV datasets, available in the codebase at `_data/json/` and `_data/csv/` Those [datasets can be leveraged via liquid](https://jekyllrb.com/docs/datafiles/) tags, for use within javascript if/as needed.
 

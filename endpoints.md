@@ -1,6 +1,7 @@
 ---
 layout: page
 title: REST API
+topnav: false
 permalink: /endpoints
 ---
 

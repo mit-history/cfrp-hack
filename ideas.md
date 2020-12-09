@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Ideas
+topnav: false
 permalink: /ideas/
 ---
 

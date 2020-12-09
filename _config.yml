@@ -6,12 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: CFRP Receipt Register Data Documentation
-email: jamie@performantsoftware.com
+title: CFRP Developer Documentation
+email: info@cfregisters.org
 description: > # this means to ignore newlines until "baseurl:"
   Documentation of the database structure
-  and data API for the receipt registers from
-  the Comédie Française Registers Project
+  and data API for the Comédie Française Registers Project
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hack.cfregisters.org/" # the base hostname & protocol for your site
 # twitter_username: jamiefolsom

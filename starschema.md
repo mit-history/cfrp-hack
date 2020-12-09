@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Denormalised data
+topnav: false
 permalink: /starschema
 ---
 
