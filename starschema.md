@@ -6,6 +6,9 @@ permalink: /starschema
 
 With a Postgresql client installed, you can run queries directly against the CFRP data in a single denormalised table.  This makes collecting many descriptive statistics much simpler.
 
+These data have been used in an article published by the MIT Press: [*"Databases, Revenues, & Repertory
+The French Stage Online, 1680-1793"*](https://cfrp.mitpress.mit.edu/).
+
 ## Install
 
 If you use Homebrew on OS X, type 'brew install postgresql' set up. Otherwise, see the [PostgreSQL page](http://www.postgresql.org/download/).

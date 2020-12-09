@@ -8,6 +8,8 @@ title: Welcome
 
 This is documentation for using the dataset compiled from the [receipt registers](https://www.cfregisters.org/en/registers/receipt-registers) by the **Comédie Française Registers Project**. There are separate datasets, and documentation, for the [casting registers](https://www.cfregisters.org/en/registers/casting-registers), and the [expense registers](https://www.cfregisters.org/en/registers/expense-registers).
 
+The project is also working on 19th Century receipts, as well as the 17th and 18th century ones.
+
 The registers themselves are held in bound volumes at the archives at the Comédie Française theater (CF) in Paris, France. These data were compiled by hand, using a web-based data entry application.
 
 ## The Database
@@ -18,7 +20,7 @@ The structure of the database is described on [this page](/tables). That said, i
 
 ## The API
 
-The data in each table is available through a read-only API endpoint. For example, the list of plays can be queried via the [`/plays`](https://api.cfregisters.org/plays) endpoint. Simply visiting that URL in a browser will show all 1100-plus titles in the repertory, with their metadata. While you will note that those records include the name of the Author, that's a vestige of an older database structure.
+The data in each table is available through a read-only API endpoint. For example, the list of plays can be queried via the [`/plays`](https://api.cfregisters.org/plays) endpoint. Simply visiting that URL in a browser will show all 1036 titles in the repertory, with their metadata. While you will note that those records include the name of the Author, that's a vestige of an older database structure.
 
 [Author](https://api.cfregisters.org/people?is_author=eq.true) records are now stored separately as well, and are related to plays via a "join" table, which is a more conventional structure for this kind of database. There are a few such examples of these "legacy" data, which have not been deleted, since previous versions of some tools depend on those fields.
 
