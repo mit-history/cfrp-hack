@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: CFRP Developer Documentation
+title: RCF Dev Docs
 email: info@cfregisters.org
 description: > # this means to ignore newlines until "baseurl:"
   Documentation of the database structure
@@ -19,7 +19,7 @@ github_username:
 # Build settings
 markdown: kramdown
 
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 exclude: ["assets/js/"]
 

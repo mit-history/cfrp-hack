@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: en
+nav_order: 1
 title: Welcome
 ---
 
