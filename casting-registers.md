@@ -1,9 +1,19 @@
 ---
 layout: page
 title: Casting Registers
-topnav: true
+nav_order: 3
 permalink: /feux/
 ---
+
+<details open markdown="block">
+  <summary>
+    Table de Contenus
+  </summary>
+  {: .text-delta }
+1. TdC
+{:toc}
+</details>
+
 
 ## Casting Registers
 
