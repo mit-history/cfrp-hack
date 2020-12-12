@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: Data
-topnav: false
-permalink: /data/
+parent: Receipt Registers
 ---
 
 ## Datasets

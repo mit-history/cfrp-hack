@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: API
-topnav: false
-permalink: /api/
+parent: Receipt Registers
 ---
 
 ### How to query the API
