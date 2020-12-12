@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Ideas
-topnav: false
+nav_exclude: true
+search_exclude: true
 permalink: /ideas/
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Data
-topnav: false
+nav_exclude: true
+search_exclude: true
 permalink: /data/
 ---
 
