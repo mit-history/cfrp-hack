@@ -5,11 +5,20 @@ parent: Receipt Registers
 nav_order: 1
 ---
 
-## Endpoints and requests
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
-A GET request to [http://api.cfregisters.org/](http://api.cfregisters.org/) returns a list of available endpoints (see an excerpt below).
+## Overview
 
-As an example, an OPTIONS request to /plays returns a list of available columns; a GET request to [that same endpoint](http://api.cfregisters.org/plays) returns the data as JSON, and can be filtered.
+This API is the preferred method for working with the RCF data. It provides read-only access to the live data, in JSON format.
+
+### Endpoints
 
 Here is a full list of REST API endpoints:
 
@@ -32,27 +41,23 @@ Here is a full list of REST API endpoints:
 - ticket_sales_by_profile
 
 
-A prefabricated set of requests can be downloaded on our [tools page](/tools).
-
-With a Postgresql client installed, you can run queries directly against the CFRP data in a single denormalised table.  This makes collecting many descriptive statistics much simpler.
-
-
-
-### How to query the API
+A prefabricated set of requests can be downloaded as described under [#tools](#tools).
 
 [Author](https://api.cfregisters.org/people?is_author=eq.true) records are now stored separately as well, and are related to plays via a "join" table, which is a more conventional structure for this kind of database. There are a few such examples of these "legacy" data, which have not been deleted, since previous versions of some tools depend on those fields.
 
-To see everything that's available, visit [this page](https://api.cfregisters.org/), and/or install an [API browser](/tools) and explore the data in each table.
-
 ### How to query the API
+
+Visiting [http://api.cfregisters.org/](http://api.cfregisters.org/) returns a list of all available endpoints (see an excerpt below).
+
+Install an [API browser](#tools) and explore the data in each table.
 
 Once you've decided which data you're interested in, you can get all records by visiting the endpoint for that table.
 
-But you can also filter those records by any field in that table, exclude fields you're not interested in, or even nest data from related tables within a query.
+As an example, sending an `OPTIONS` request to the `/plays` endpoint returns a list of available columns; a GET request to [that same endpoint](http://api.cfregisters.org/plays) returns the data as JSON.
 
-Documentation of the syntax for those queries is available from the website for "[PostgREST](http://postgrest.org/en/v5.0.0/api.html#)", an API framework the name of which is a portmanteau for "PostgreSQL" (the database we use) and "REST" (the widely used API architecture we've adopted).
+You can also filter those records by any field in that table, exclude fields you're not interested in, or even nest data from related tables within a query.
 
-One example of that syntax is in use above, in the query for Authors:
+One example of that syntax is below: a query for Authors:
 
 ```
 https://api.cfregisters.org/people?is_author=eq.true
@@ -62,27 +67,30 @@ Since the `people` table includes both actors and authors, we filter the results
 
 These parameters can be strung together with `&` if you want to filter by more than one field at a time. There are also `and` and `or` operators, and taken together, these and other syntax features make the query interface quite flexible and powerful.
 
-## Add to this documentation!
+Documentation of the syntax for more complex queries is available from the website for "[PostgREST](http://postgrest.org/en/v5.0.0/api.html#)", an API framework the name of which is a portmanteau for "PostgreSQL" (the database we use) and "REST" (the widely used API architecture we've adopted).
 
-This documentation site is itself hackable, and we welcome pull requests.
+## Tools
 
-### Set up
-- Fork [this site](https://github.com/mit-history/cfrp-hack/)
-- Clone this repo locally; then:
-- `git branch your-proposed-change`
-- If there is a request in Postman that serves your purposes, you can click "Generate Code" to get a copy/pasteable API client in your language of choice.
+### JSON View
 
-### Run this site locally
+[JSONView for Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) prints JSON responses in a familiar outline format.
 
-- If you have ruby installed:
-- `gem install bundler`
-- `bundle install`
-- `jekyll serve`
+### Postman
 
-### Submit your suggestion as a Pull Request
+Postman is a RESTful Web API browser.
 
-- Code!
-- `git add .`
-- `git commit -m "Created hackathon project"`
-- `git push`
-- Open a Pull request against [the upstream repo](https://github.com/mit-history/cfrp-hack/pulls).
+1. [Install Postman](https://www.getpostman.com)
+2. Import [this collection of API requests](https://www.getpostman.com/collections/75eb47f4dd961830b5b9) into Postman.
+3. Experiment with the requests in the collection
+
+Once Postman is installed, you can also use this button to import the collection of sample requests.
+<div class="postman-run-button" data-postman-action="collection/import" data-postman-var-1="75eb47f4dd961830b5b9"></div>
+<script type="text/javascript">
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>

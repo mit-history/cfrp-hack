@@ -14,13 +14,17 @@ parent: Receipt Registers
 {:toc}
 </details>
 
+### Overview
+
+There are cases in which it's valuable to understand the actual structure of the database, in terms of tables, columns and relationships.
+
+This page is mostly for developer reference. It will be more common to work with the data via the [REST API](api), rather than with the database itself.
+
+### Tables
+
 Below find a list of the most relevant tables in the CFRP database, with most of their relevant fields. Omitted are adminstrative tables, timestamp columns, and similar plumbing.
 
-NB: All of the data from these tables are also accessible via the [REST API](api).
-
-Also, there is a complete dump of the database, in PostgreSQL compatible dumpfile format [here](/assets/data/cfrp-database.dump).
-
-### Registers
+#### Registers
 
 ```
 |           Column           |            Type             |
@@ -60,7 +64,7 @@ Also, there is a complete dump of the database, in PostgreSQL compatible dumpfil
 | _packed_id                 | integer                     |
 ```
 
-### Plays
+#### Plays
 
 ```
         Column         |            Type             |
@@ -80,7 +84,7 @@ Also, there is a complete dump of the database, in PostgreSQL compatible dumpfil
  _packed_id            | integer                     |
  ```
 
-### Register Plays
+#### Register Plays
 
 ```
      Column       |            Type             |
@@ -103,7 +107,7 @@ reprise_perfnum   | integer                     |
 
 ```
 
-### Ticket Sales
+#### Ticket Sales
 
 ```
       Column        |            Type             |
@@ -120,7 +124,7 @@ price_per_ticket_d  | integer                     |
 recorded_total_d    | integer                     |
 ```
 
-### People
+#### People
 
 ```
         Column          |            Type             |
@@ -138,7 +142,7 @@ dates                   | character varying(255)      |
 ```
 
 
-### Register Images
+#### Register Images
 
 ```
       Column       |            Type             |
@@ -154,7 +158,7 @@ image_updated_at   | timestamp without time zone |
 orientation        | character varying(255)      |
 ```
 
-### Register Periods
+#### Register Periods
 
 ```
   Column   |            Type             |
@@ -163,7 +167,7 @@ id         | integer                     |
 period     | character varying(255)      |
 ```
 
-### Register Period Seating Categories
+#### Register Period Seating Categories
 
 ```
       Column        |       Type       |
@@ -175,7 +179,7 @@ ordering            | integer          |
 
 ```
 
-### Seating Categories
+#### Seating Categories
 
 ```
   Column    |            Type             |
@@ -185,8 +189,7 @@ name        | character varying(255)      |
 description | character varying(255)      |
 ```
 
-
-### Participations
+#### Participations
 
 ```
      Column      |            Type             |
@@ -202,12 +205,19 @@ register_play_id | integer                     |
 
 ## Working with a copy of the database
 
+There is a complete dump of the database, in PostgreSQL compatible dumpfile format [here](/data/dump/cfrp-database.dump).
+
+With a Postgresql client installed, you can run queries directly against the CFRP data in a single denormalised table.  This makes collecting many descriptive statistics much simpler.
+
+NB: That dump file is a snapshot of the database, from a point in time, and is not most recent version of the live database; to access the most recent data, please refer to the [REST API](api).
+
 If you use Homebrew on OS X, type 'brew install postgresql' set up. Otherwise, see the [PostgreSQL page](http://www.postgresql.org/download/).
 
 ### Working with the denormalised data
 
 From here, you have access to a database view called *cfrp*, with one row for each ticket sale entry in the CF registers.
 
+```
 Column                  + Type                   |
 ------------------------+------------------------+
 date                    | date                   |
@@ -277,6 +287,7 @@ debut_3                 | boolean                |
 ex_attendance_3         | character varying(255) |
 ex_representation_3     | character varying(255) |
 ex_place_3              | character varying(255) |
+```
 
 ### Examples
 

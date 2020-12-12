@@ -21,3 +21,28 @@ This website presents documentation for each of those sets of registers.
 
 These data have been used in an article published by the MIT Press: [*"Databases, Revenues, & Repertory
 The French Stage Online, 1680-1793"*](https://cfrp.mitpress.mit.edu/).
+
+## Add to this documentation!
+
+This documentation site is itself hackable, and we welcome pull requests.
+
+### Set up
+- Fork [this site](https://github.com/mit-history/cfrp-hack/)
+- Clone this repo locally; then:
+- `git branch your-proposed-change`
+- If there is a request in Postman that serves your purposes, you can click "Generate Code" to get a copy/pasteable API client in your language of choice.
+
+### Run this site locally
+
+- If you have ruby installed:
+- `gem install bundler`
+- `bundle install`
+- `jekyll serve`
+
+### Submit your suggestion as a Pull Request
+
+- Code!
+- `git add .`
+- `git commit -m "Created hackathon project"`
+- `git push`
+- Open a Pull request against [the upstream repo](https://github.com/mit-history/cfrp-hack/pulls).
