@@ -16,3 +16,8 @@ This website presents documentation for each of those sets of registers.
 [Receipt Registers](/receipts/)
 
 [Casting Registers](/feux/)
+
+### Publications
+
+These data have been used in an article published by the MIT Press: [*"Databases, Revenues, & Repertory
+The French Stage Online, 1680-1793"*](https://cfrp.mitpress.mit.edu/).
