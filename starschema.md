@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: default
 title: Denormalised data
-nav_exclude: true
-search_exclude: true
-permalink: /starschema
+parent: Receipt Registers
 ---
 
 With a Postgresql client installed, you can run queries directly against the CFRP data in a single denormalised table.  This makes collecting many descriptive statistics much simpler.

@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: REST API
-topnav: false
-permalink: /endpoints
+parent: Receipt Registers
 ---
 
 A GET request to [http://api.cfregisters.org/](http://api.cfregisters.org/) returns a list of available endpoints (see an excerpt below).

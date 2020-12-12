@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: default
 title: Receipt Registers
-topnav: true
+has_children: true
 permalink: /receipts/
 ---
+
+{:toc}
 
 ## Receipt Registers
 

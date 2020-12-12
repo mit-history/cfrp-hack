@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: Tools
-topnav: false
-permalink: /tools/
+parent: Receipt Registers
 ---
 
 ## Postman

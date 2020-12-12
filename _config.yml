@@ -22,3 +22,7 @@ markdown: kramdown
 theme: just-the-docs
 search_enabled: true
 exclude: ["assets/js/"]
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
