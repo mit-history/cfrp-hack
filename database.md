@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: page
 title: Database
-nav_order: 3
+nav_order: 2
 parent: Receipt Registers
+permalink: /receipts/database.html
+
 ---
 
 <details open markdown="block">
@@ -14,17 +16,17 @@ parent: Receipt Registers
 {:toc}
 </details>
 
-### Overview
+## Overview
 
 There are cases in which it's valuable to understand the actual structure of the database, in terms of tables, columns and relationships.
 
 This page is mostly for developer reference. It will be more common to work with the data via the [REST API](api), rather than with the database itself.
 
-### Tables
+## Tables
 
 Below find a list of the most relevant tables in the CFRP database, with most of their relevant fields. Omitted are adminstrative tables, timestamp columns, and similar plumbing.
 
-#### Registers
+### Registers
 
 ```
 |           Column           |            Type             |
@@ -64,7 +66,7 @@ Below find a list of the most relevant tables in the CFRP database, with most of
 | _packed_id                 | integer                     |
 ```
 
-#### Plays
+### Plays
 
 ```
         Column         |            Type             |
@@ -84,7 +86,7 @@ Below find a list of the most relevant tables in the CFRP database, with most of
  _packed_id            | integer                     |
  ```
 
-#### Register Plays
+### Register Plays
 
 ```
      Column       |            Type             |
@@ -107,7 +109,7 @@ reprise_perfnum   | integer                     |
 
 ```
 
-#### Ticket Sales
+### Ticket Sales
 
 ```
       Column        |            Type             |
@@ -124,7 +126,7 @@ price_per_ticket_d  | integer                     |
 recorded_total_d    | integer                     |
 ```
 
-#### People
+### People
 
 ```
         Column          |            Type             |
@@ -142,7 +144,7 @@ dates                   | character varying(255)      |
 ```
 
 
-#### Register Images
+### Register Images
 
 ```
       Column       |            Type             |
@@ -158,7 +160,7 @@ image_updated_at   | timestamp without time zone |
 orientation        | character varying(255)      |
 ```
 
-#### Register Periods
+### Register Periods
 
 ```
   Column   |            Type             |
@@ -167,7 +169,7 @@ id         | integer                     |
 period     | character varying(255)      |
 ```
 
-#### Register Period Seating Categories
+### Register Period Seating Categories
 
 ```
       Column        |       Type       |
@@ -179,7 +181,7 @@ ordering            | integer          |
 
 ```
 
-#### Seating Categories
+### Seating Categories
 
 ```
   Column    |            Type             |
@@ -189,7 +191,7 @@ name        | character varying(255)      |
 description | character varying(255)      |
 ```
 
-#### Participations
+### Participations
 
 ```
      Column      |            Type             |

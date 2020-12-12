@@ -2,6 +2,7 @@
 layout: default
 title: API
 parent: Receipt Registers
+permalink: /receipts/api.html
 nav_order: 1
 ---
 
@@ -16,11 +17,13 @@ nav_order: 1
 
 ## Overview
 
-This API is the preferred method for working with the RCF data. It provides read-only access to the live data, in JSON format.
+This API is the preferred method for working with the RCF data. It provides read-only access to the live data.
+
+There is a single REST API endpoint for each table and each view in the database. Each of these endpoints provide access to the data in that table, in JSON format.
 
 ### Endpoints
 
-Here is a full list of REST API endpoints:
+Here is a full list of REST API endpoints (which you will note, corresponds to the tables available in the [database](/)):
 
 - amalgamated_sales
 - participations

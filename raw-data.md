@@ -2,7 +2,8 @@
 layout: default
 title: Raw Data
 parent: Receipt Registers
-nav_order: 2
+permalink: /receipts/raw-data.html
+nav_order: 3
 ---
 
 ## Raw Data
