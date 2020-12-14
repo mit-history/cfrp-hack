@@ -25,7 +25,7 @@ There is a single REST API endpoint for each table and each view in the database
 
 ### Endpoints
 
-Here is a full list of REST API endpoints (which you will note, corresponds to the tables available in the [database](/)):
+Here is a full list of REST API endpoints (which you will note, correspond to the tables available in the [database](/en/receipts/database.html#tables)):
 
 - amalgamated_sales
 - participations
