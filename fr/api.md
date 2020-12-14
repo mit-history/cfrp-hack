@@ -25,7 +25,7 @@ Il existe un seul point de terminaison d'API REST pour chaque table et chaque vu
 
 ### Points de terminaison
 
-Voici une liste complète des points de terminaison de l'API REST (que vous noterez, correspond aux tables disponibles dans la [base de données](/fr/les-recettes/la-base-de-données.html)):
+Voici une liste complète des points de terminaison de l'API REST (que vous noterez, correspondent aux [tables dans la base de données](/fr/les-recettes/la-base-de-données.html#les-tableaux)):
 
 - amalgamated_sales
 - participations
