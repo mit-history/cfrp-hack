@@ -18,15 +18,15 @@ permalink: /fr/les-recettes/la-base-de-données.html
 {:toc}
 </details>
 
-## Overview
+## Survol
 
-There are cases in which it's valuable to understand the actual structure of the database, in terms of tables, columns and relationships.
+Dans certains cas, il est utile de comprendre la structure réelle de la base de données, en termes de tables, de colonnes et de relations.
 
-This page is mostly for developer reference. It will be more common to work with the data via the [REST API](api), rather than with the database itself.
+Cette page est principalement destinée aux développeurs. Il sera plus courant de travailler avec les données via [l'API REST](api), plutôt qu'avec la base de données elle-même.
 
-## Tables
+## Les Tableaux
 
-Below find a list of the most relevant tables in the CFRP database, with most of their relevant fields. Omitted are adminstrative tables, timestamp columns, and similar plumbing.
+Vous trouverez ci-dessous une liste des tableaux les plus pertinents de la base de données CFRP, avec la plupart de leurs champs pertinents. Les tables administratives, les colonnes d'horodatage et la plomberie similaire sont omises.
 
 ### Registers
 
@@ -207,19 +207,19 @@ register_play_id | integer                     |
 
 ```
 
-## Working with a copy of the database
+## Travailler avec une copie de la base de données
 
-There is a complete dump of the database, in PostgreSQL compatible dumpfile format [here](/data/dump/cfrp-database.dump).
+Il y a un vidage complet de la base de données, au format dumpfile compatible PostgreSQL [ici](/data/dump/cfrp-database.dump).
 
-With a Postgresql client installed, you can run queries directly against the CFRP data in a single denormalised table.  This makes collecting many descriptive statistics much simpler.
+Avec un client Postgresql installé, vous pouvez exécuter des requêtes directement sur les données CFRP dans une seule table dénormalisée. Cela rend la collecte de nombreuses statistiques descriptives beaucoup plus simple.
 
-NB: That dump file is a snapshot of the database, from a point in time, and is not most recent version of the live database; to access the most recent data, please refer to the [REST API](api).
+NB: Ce fichier de vidage est un instantané de la base de données, à un moment donné, et n'est pas la version la plus récente de la base de données en direct; pour accéder aux données les plus récentes, veuillez vous référer à l '[API REST] (api).
 
-If you use Homebrew on OS X, type 'brew install postgresql' set up. Otherwise, see the [PostgreSQL page](http://www.postgresql.org/download/).
+Si vous utilisez Homebrew sur OS X, tapez la configuration 'brew install postgresql'. Sinon, consultez la [page PostgreSQL](http://www.postgresql.org/download/).
 
-### Working with the denormalised data
+### Travailler avec les données dénormalisées
 
-From here, you have access to a database view called *cfrp*, with one row for each ticket sale entry in the CF registers.
+De là, vous avez accès à une vue de base de données appelée `cfrp`, avec une ligne pour chaque entrée de vente de billets dans les registres CF.
 
 ```
 Column                  + Type                   |
@@ -295,7 +295,7 @@ ex_place_3              | character varying(255) |
 
 ### Examples
 
-_How many nights in each season did a Voltaire play open for a Racine play?_
+_Combien de nuits dans chaque saison une pièce de Voltaire a-t-elle ouverte pour une pièce de Racine?_
 
 ```sql
     SELECT cfrp_season, COUNT(DISTINCT date) FROM cfrp
@@ -326,9 +326,9 @@ _How many nights in each season did a Voltaire play open for a Racine play?_
     1789-1790   |     1
 ```
 
-_What were low, mean, high ticket receipts per night for each season?_
+_Quels étaient les reçus de billets faibles, moyens et élevés par nuit pour chaque saison?_
 
-First we compute total receipts per day; then re-group by season
+Nous calculons d'abord le total des recettes par jour; puis re-grouper par saison.
 
 ```sql
     WITH temp AS(
@@ -368,6 +368,6 @@ cfrp_season | min_receipts | mean_receipts | max_receipts
 ...
 ```
 
-## Further info
+## Plus d'infos
 
-You will find the [PostgreSQL query documentation](http://www.postgresql.org/docs/9.5/static/sql-select.html) useful, particularly sub queries (or CTEs) and partitions.
+Vous trouverez utile la [documentation sur les requêtes PostgreSQL](http://www.postgresql.org/docs/9.5/static/sql-select.html), en particulier les sous-requêtes (ou CTE) et les partitions.

@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: fr
-title: Raw Data
+title: Les Données Crues
 parent: Les Registres des Recettes
 grand_parent: Version Française
 permalink: /fr/recettes/données-crues.html
