@@ -52,13 +52,13 @@ Les [Auteurs](https://api.cfregisters.org/people?is_author=eq.true) sont désorm
 
 ### Comment créer une requête vers cette API
 
-La visite de [http://api.cfregisters.org/ </font>(http://api.cfregisters.org/) renvoie une liste de tous les points de terminaison disponibles (voir un extrait ci-dessous).
+La visite de [http://api.cfregisters.org/](http://api.cfregisters.org/) renvoie une liste de tous les points de terminaison disponibles (voir un extrait ci-dessous).
 
-Installez un [navigateur API] (# outils) et explorez les données de chaque tableau.
+Installez un [navigateur API](#outils) et explorez les données de chaque tableau.
 
 Une fois que vous avez décidé des données qui vous intéressent, vous pouvez obtenir tous les enregistrements en visitant le point de terminaison de cette table.
 
-Par exemple, l'envoi d'une requête `OPTIONS` au point de terminaison` / play` renvoie une liste des colonnes disponibles; une requête GET à [ce même point de terminaison] (http://api.cfregisters.org/plays) renvoie les données au format JSON.
+Par exemple, l'envoi d'une requête `OPTIONS` au point de terminaison `/play` renvoie une liste des colonnes disponibles; une requête GET à [ce même point de terminaison](http://api.cfregisters.org/plays) renvoie les données au format JSON.
 
 Vous pouvez également filtrer ces enregistrements en fonction de n'importe quel champ de cette table, exclure des champs qui ne vous intéressent pas ou même imbriquer des données de tables associées dans une requête.
 
