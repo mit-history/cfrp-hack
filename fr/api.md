@@ -56,11 +56,11 @@ La visite de [http://api.cfregisters.org/](http://api.cfregisters.org/) renvoie 
 
 Installez un [navigateur API](#outils) et explorez les données de chaque tableau.
 
-Une fois que vous avez décidé des données qui vous intéressent, vous pouvez obtenir tous les enregistrements en visitant le point de terminaison de cette table.
+Une fois que vous avez décidé des données qui vous intéressent, vous pouvez obtenir tous les données en visitant le point de terminaison de cette table.
 
 Par exemple, l'envoi d'une requête `OPTIONS` au point de terminaison `/play` renvoie une liste des colonnes disponibles; une requête GET à [ce même point de terminaison](http://api.cfregisters.org/plays) renvoie les données au format JSON.
 
-Vous pouvez également filtrer ces enregistrements en fonction de n'importe quel champ de cette table, exclure des champs qui ne vous intéressent pas ou même imbriquer des données de tables associées dans une requête.
+Vous pouvez également filtrer ces données en fonction de n'importe quel champ de cette table, exclure des champs qui ne vous intéressent pas ou même imbriquer des données de tables associées dans une requête.
 
 Un exemple de cette syntaxe est ci-dessous: une requête pour les auteurs:
 
@@ -68,7 +68,7 @@ Un exemple de cette syntaxe est ci-dessous: une requête pour les auteurs:
 https://api.cfregisters.org/people?is_author=eq.true
 ```
 
-Puisque la table `people` inclut à la fois des acteurs et des auteurs, nous filtrons les résultats de notre requête sur cette table, en spécifiant que nous ne voulons que les enregistrements pour lesquels la valeur du champ `is_author` est `true`. Nous faisons cela en envoyant notre requête au point de terminaison `/people`, avec la clé de paramètre de requête `is_author`, et en passant la valeur `eq.true` avec cette clé. Les autres paramètres de requête disponibles incluent `gt`, `lt`, pour «supérieur à» et «inférieur à» (comparaisons quantitatives), `neq` pour «pas égal à», etc. La liste complète est disponible [ici](https://postgrest.org/en/v7.0.0/api.html#operators).
+Puisque la table `people` inclut à la fois des acteurs et des auteurs, nous filtrons les résultats de notre requête sur cette table, en spécifiant que nous ne voulons que les données pour lesquels la valeur du champ `is_author` est `true`. Nous faisons cela en envoyant notre requête au point de terminaison `/people`, avec la clé de paramètre de requête `is_author`, et en passant la valeur `eq.true` avec cette clé. Les autres paramètres de requête disponibles incluent `gt`, `lt`, pour «supérieur à» et «inférieur à» (comparaisons quantitatives), `neq` pour «pas égal à», etc. La liste complète est disponible [ici](https://postgrest.org/en/v7.0.0/api.html#operators).
 
 Ces paramètres peuvent être liés avec `&` si vous souhaitez filtrer par plus d'un champ à la fois. Il existe également des opérateurs `and` et `or` (et/ou). Ensemble, ce syntaxe rendent l'interface de requête assez flexible et puissante.
 
