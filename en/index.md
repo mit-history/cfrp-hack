@@ -8,11 +8,15 @@ title: English Version
 
 # Overview
 
-This is documentation for using the datasets compiled by the **Comédie Française Registers Project** from the [receipt registers](https://www.cfregisters.org/en/registers/receipt-registers), the [casting registers](https://www.cfregisters.org/en/registers/casting-registers), and the [expense registers](https://www.cfregisters.org/en/registers/expense-registers).
+The purpose of the **Comédie Française Registers Project** is to capture data from the registers of the Comédie Française Theater in Paris:
 
-The project is also working on 19th Century receipts, as well as the 17th and 18th century ones. The registers themselves are held in bound volumes at the archives at the Comédie Française theater (CF) in Paris, France. These data were compiled by hand, using a web-based data entry application.
+- [Receipt Registers] (https://www.cfregisters.org/fr/registres/registres-des-recettes)
+- [Casting Registers] (https://www.cfregisters.org/fr/registres/registres-des-feux) and
+- [Expense Registers] (https://www.cfregisters.org/fr/registres/registres-des-dépenses).
 
-This website presents documentation for each of those sets of registers.
+The project is also working on recipes from the 19th century, as well as those from the 17th and 18th centuries. The registers themselves are kept in volumes linked to the archives of the theater of the Comédie Française (CF) in Paris. This data was entered "by hand", using an online data entry application.
+
+This website provides documentation for the use of the data so entered from each of these sets of records.
 
 - [Receipt Registers](/receipts/)
 - [Casting Registers](/feux/)

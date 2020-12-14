@@ -9,11 +9,15 @@ redirect_from: "/"
 
 # Survol
 
-Ce site web présente de la documentation pour l'utilisation des ensembles de données saisies par le projet des **Registres de la Comédie Française** à partir des [registres de recettes](https://www.cfregisters.org/fr/registres/registres-des-recettes), les [registres de casting](https://www.cfregisters.org/fr/registres/registres-des-feux) et les [registres de dépenses](https://www.cfregisters.org/fr/registres/registres-des-dépenses).
+Le projet des **Registres de la Comédie Française** a pour objectif la saisie des données numériques à partir des registres de la Comédie Française:
 
-Le projet travaille également sur les recettes du 19e siècle, ainsi que celles des 17e et 18e siècles. Les registres eux-mêmes sont conservés en volumes reliés aux archives du théâtre de la Comédie Française (CF) à Paris. Ces données ont été compilées "à la main", à l'aide d'une application de saisie de données en ligne.
+- [Les registres de recettes](https://www.cfregisters.org/fr/registres/registres-des-recettes)
+- [Les registres des feux](https://www.cfregisters.org/fr/registres/registres-des-feux) et
+- [Les registres de dépenses](https://www.cfregisters.org/fr/registres/registres-des-dépenses).
 
-Ce site web présente la documentation pour chacun de ces ensembles de registres.
+Le projet travaille également sur les recettes du 19e siècle, ainsi que celles des 17e et 18e siècles. Les registres eux-mêmes sont conservés en volumes reliés aux archives du théâtre de la Comédie Française (CF) à Paris. Ces données ont été saisies "à la main", à l'aide d'une application de saisie de données en ligne.
+
+Ce site web présente la documentation pour l'utilisation des données ainsi saisies à partir chacun de ces ensembles de registres.
 
 - [Registres des Recettes](/fr/les-recettes/)
 - [Casting Registers](/fr/feux/)
