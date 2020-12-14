@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Database
+lang: fr
+title: La Base de Données
 nav_order: 2
-parent: Receipt Registers
-permalink: /receipts/database.html
+parent: Les Registres des Recettes
+grand_parent: Version Française
+permalink: /fr/les-recettes/la-base-de-données.html
 
 ---
 

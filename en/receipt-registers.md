@@ -1,9 +1,11 @@
 ---
 layout: default
+lang: en
 title: Receipt Registers
+parent: English Version
 has_children: true
 nav_order: 2
-permalink: /receipts/
+permalink: /en/receipts/
 ---
 
 {:toc}

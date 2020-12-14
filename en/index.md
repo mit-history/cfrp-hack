@@ -1,8 +1,9 @@
 ---
 layout: default
 lang: en
-nav_order: 1
-title: Welcome
+has_children: true
+nav_order: 2
+title: English Version
 ---
 
 # Overview

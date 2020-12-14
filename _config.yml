@@ -32,3 +32,7 @@ footer_content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
 aux_links:
   "Comédie Française Registers Project":
     - "//www.cfregisters.org/"
+
+
+plugins:
+  - jekyll-redirect-from

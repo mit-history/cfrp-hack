@@ -2,7 +2,8 @@
 layout: default
 lang: fr
 nav_order: 1
-title: Bienvenue
+has_children: true
+title: Version Française
 redirect_from: "/"
 ---
 

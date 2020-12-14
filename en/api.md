@@ -1,9 +1,11 @@
 ---
 layout: default
+lang: en
+nav_order: 1
 title: API
 parent: Receipt Registers
-permalink: /receipts/api.html
-nav_order: 1
+grand_parent: English Version
+permalink: /en/receipts/api.html
 ---
 
 <details open markdown="block">

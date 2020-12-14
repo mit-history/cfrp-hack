@@ -1,8 +1,10 @@
 ---
 layout: default
+lang: en
 title: Raw Data
 parent: Receipt Registers
-permalink: /receipts/raw-data.html
+grand_parent: English Version
+permalink: /en/receipts/raw-data.html
 nav_order: 3
 ---
 

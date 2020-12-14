@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Casting Registers
+lang: fr
 nav_order: 3
-permalink: /feux/
+title: Les Registres des Feux
+parent: Version Française
+permalink: /fr/feux/
 ---
 
 <details open markdown="block">
