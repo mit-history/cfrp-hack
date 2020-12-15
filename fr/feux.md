@@ -47,7 +47,7 @@ Ce tableau contient la liste complète des comédiens avec des informations perm
 - CP: id
 - - CE: people_id (people)
 
-#### Précisions:
+_Précisions:_
 
 Le ‘status_osp’ indique si le comédien tenait le rang de occasionel, pensionnaire, ou sociétaire
 Habituellement on comédien n'a qu’un début, mais parfois il y en a plusieurs - d’où le type liste
@@ -66,7 +66,7 @@ Ce tableau est une représentation d’une page dans les registres des feux. Il 
 - CP: id
 - CE: register_id (registers) , verification (verification_states)
 
-#### Précisions:
+_Précisions:_
 - Le champ ‘notes’ et pour les notes supplémentaires présents dans les registres ils-mêmes
 - Les ‘annotations’ sont pour les notes/observations des chercheurs
 
@@ -100,7 +100,7 @@ Ce tableau, pris de la base des recettes, associe des pièces à des registres (
 
 *celle là n’est pas ‘officiel’ dans le schéma de la base
 
-#### Précisions:
+_Précisions:_
 
 - La contrainte de clé étrangère entre ce tableau et le tableau des pièces a été ajoutée que dans la base des feux
 - Il n’était pas possible de faire la même chose pour le ‘register_id’ car il existe 4310 valeurs dans cette colonne qui ne sont pas présentes dans le tableau des registres
@@ -128,7 +128,7 @@ Ce tableau décrit pour chaque séance, qui joue quel rôle, dans quelle pièce.
 - CE: feux_play_id (feux), role_id (personnages), actor_id (acteurs)
 
 
-#### Précisions:
+_Précisions:_
 - Parfois (nous ne savons pas trop pourquoi) des comédiens sont écrit au centre de la page au lieu d’être à la droite; le boolean ‘in_middle’ est notre moyen de noter ces cas.
 - Les valeurs de ‘debut’ et ‘reprise’ sont vrais que quand ces événements sont notés dans les registres (non en raison de nos observations).
 - Le ‘role_id’ est null si nous avons que les noms des comédiens, et le ‘actor_id’ peut être null dans des cas où nous avons que la distribution
