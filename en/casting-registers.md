@@ -30,16 +30,16 @@ Tables are linked to one another by referring to foreign keys, which means that 
 
 ### Tables
 
-The database includes fourteen tables. Nine of them are new, and five are from the recipe base. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
+The database includes fourteen tables. Nine of them are new, and five are from the receipt table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
 
-** Primary key = The database includes fourteen tables. Nine of them are new, and five are from the recipe base. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
+** Primary key = The database includes fourteen tables. Nine of them are new, and five are from the receipt table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
 
 - Primary key = CP
 - Foreign key = FK
 
 **people**
 
-This table comes from the recipe base. It describes the people (not just the comedians) of the CF
+This table comes from the receipt table. It describes the people (not just the comedians) of the CF
 
 - PK: id
 
@@ -81,7 +81,7 @@ This table records the alternative locations when plays are performed outside CF
 
 **plays**
 
-This table comes from the recipe database. It describes the plays played at the CF - some new ones were added when entering lights.
+This table comes from the receipt database. It describes the plays played at the CF - some new ones were added when entering lights.
 
 - PK: id
 
@@ -95,7 +95,7 @@ This table is also related to the receipts table. It links the authors (people) 
 
 **register_plays**
 
-This table, taken from the base of receipts, associates parts with registers (and therefore with dates).
+This table, taken from the receipts table, associates plays with registers (and therefore with dates).
 
 PK: id
 FK: play_id (plays), register_id (registers)*
@@ -104,8 +104,8 @@ _*this one is not 'official' in the database diagram_
 
 _Notes:_
 
-- The foreign key constraint between this table and the parts table has been added only in the base of lights
-- It was not possible to do the same for the 'register_id' because there are 4310 values in this column which are not present in the register table.
+- The foreign key constraint between this table and the plays table has been added only in the casting table
+- It was not possible to do the same for the 'register_id' because there are 4310 values in this column which are not present in the registers table.
 - This should not happen: to be continued
 
 
@@ -152,7 +152,7 @@ This table is used for permissions in the interface. This table does not apply t
 
 **verification_states**
 
-Table of the revenue base. Describes the possible states of an input.
+Table of the revenue table. Describes the possible states of an input.
 
 - PK: id
 
