@@ -23,8 +23,8 @@ This website provides documentation for the use of the data so entered from each
 
 ### Publications
 
-These data have been used in an article published by the MIT Press: [*"Databases, Revenues, & Repertory
-The French Stage Online, 1680-1793"*](https://cfrp.mitpress.mit.edu/).
+These data have been used in an book published by the MIT Press: [*Databases, Revenues, & Repertory
+The French Stage Online, 1680-1793*](https://cfrp.mitpress.mit.edu/).
 
 ## Add to this documentation!
 

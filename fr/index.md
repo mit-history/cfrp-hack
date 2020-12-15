@@ -24,8 +24,8 @@ Ce site web présente la documentation pour l'utilisation des données ainsi sai
 
 ### Les Éditions
 
-Ces données ont été utilisées dans un article publié par le MIT Press: [*"Bases de données, revenus et répertoire
-La scène française en ligne, 1680-1793"*](https://cfrp.mitpress.mit.edu/).
+Ces données ont été utilisées dans un ouvrage publié par la MIT Press, intitulé: [*Bases de données, revenus et répertoire
+La scène française en ligne, 1680-1793*](https://cfrp.mitpress.mit.edu/).
 
 ## Veuillez bien contribuer à cette documentation!
 
