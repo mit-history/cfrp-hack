@@ -35,13 +35,13 @@ The database includes fourteen tables. Nine of them are new, and five are from t
 - Primary key = CP
 - Foreign key = FK
 
-**people**
+#### people
 
 This table comes from the receipts table. It describes the people (not just the comedians) of the CF
 
 - PK: id
 
-**acteurs**
+#### acteurs
 
 This table contains the complete list of actors with information to identify them. New additions are characterized by a lack of ‘people_id’
 
@@ -54,13 +54,13 @@ _Notes:_
 - While we can calculate the last appearance of a comedian (within our period), it is only the members who have an official 'start'
 
 
-**registers**
+#### registers
 
 This table comes from the receipts database. It gives the details of a receipts register.
 
 - PK: id
 
-**feux**
+#### feux
 
 This table is a one page representation of the casting registers. It is concerned with the data that have a relation 1-1 to a session; separate tables handle 1-to-many relationships.
 
@@ -71,19 +71,19 @@ _Notes:_
 - The "notes" field and for additional notes present in the registers themselves
 - The 'annotations' are for the notes / observations of the researchers
 
-**lieux**
+#### lieux
 
 This table records the alternative locations when plays are performed outside CF theaters.
 
 - PK: id
 
-**plays**
+#### plays
 
 This table comes from the receipts database. It describes the plays played at the CF - some new ones were added when entering lights.
 
 - PK: id
 
-**authorships**
+#### authorships
 
 This table is also related to the receipts table. It links the authors (people) and plays. The choice was made to use an array to do this due to the fact that some plays have multiple authors.
 
@@ -91,7 +91,7 @@ This table is also related to the receipts table. It links the authors (people) 
 - FK: ext_id (people), play_id (plays)
 
 
-**register_plays**
+#### register_plays
 
 This table, taken from the receipts table, associates plays with registers (and therefore with dates).
 
@@ -107,7 +107,7 @@ _Notes:_
 - This should not happen: to be continued
 
 
-**feux_plays**
+#### feux_plays
 
 This painting associates the casting registers (the sessions) with the plays performed.
 
@@ -115,14 +115,14 @@ This painting associates the casting registers (the sessions) with the plays per
 - FK: feux_id (feux), play_id (plays), lieu_id (lieux)
 
 
-**personnages**
+#### personnages
 
 This table describes the characters that belong to each piece. Gender indicates whether it is a male or female role; sometimes this field is null, when it is a small role.
 
 - PK: id
 - FK: play_id (plays)
 
-**casting_records**
+#### casting_records
 This table describes for each session, who plays which role, in which room.
 
 - PK: id
@@ -134,13 +134,13 @@ Notes:
 - The values of "start" and "restart" are true only when these events are noted in the registers (not because of our observations).
 - The 'role_id' is null if we only have the names of the actors, and the 'actor_id' can be null in cases where we have the cast
 
-**user_permissions**
+#### user_permissions
 
 This table describes the permissions model used by the tool. It has nothing to do with registry data.
 
 - PK: permission
 
-**users**
+#### users
 
 This table is used for permissions in the interface. This table does not apply to data.
 
@@ -148,7 +148,7 @@ This table is used for permissions in the interface. This table does not apply t
 - FK: permission (user_permissions)
 
 
-**verification_states**
+#### verification_states
 
 Table of the revenue table. Describes the possible states of an input.
 
