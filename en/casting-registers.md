@@ -30,16 +30,16 @@ Tables are linked to one another by referring to foreign keys, which means that 
 
 ### Tables
 
-The database includes fourteen tables. Nine of them are new, and five are from the receipt table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
+The database includes fourteen tables. Nine of them are new, and five are from the receipts table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
 
-** Primary key = The database includes fourteen tables. Nine of them are new, and five are from the receipt table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
+** Primary key = The database includes fourteen tables. Nine of them are new, and five are from the receipts table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
 
 - Primary key = CP
 - Foreign key = FK
 
 **people**
 
-This table comes from the receipt table. It describes the people (not just the comedians) of the CF
+This table comes from the receipts table. It describes the people (not just the comedians) of the CF
 
 - PK: id
 
@@ -81,7 +81,7 @@ This table records the alternative locations when plays are performed outside CF
 
 **plays**
 
-This table comes from the receipt database. It describes the plays played at the CF - some new ones were added when entering lights.
+This table comes from the receipts database. It describes the plays played at the CF - some new ones were added when entering lights.
 
 - PK: id
 
