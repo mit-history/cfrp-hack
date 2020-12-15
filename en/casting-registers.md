@@ -32,8 +32,6 @@ Tables are linked to one another by referring to foreign keys, which means that 
 
 The database includes fourteen tables. Nine of them are new, and five are from the receipts table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
 
-** Primary key = The database includes fourteen tables. Nine of them are new, and five are from the receipts table. During entry, new data was added to some of these tables, so they no longer correspond to the original versions. The function, important attributes, and entity-association schemas of the tables follow:
-
 - Primary key = CP
 - Foreign key = FK
 
