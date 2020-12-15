@@ -64,7 +64,7 @@ This table comes from the receipts database. It gives the details of a receipts 
 
 **feux**
 
-This table is a one page representation of the fire logs. It is concerned with the data that have a relation 1-1 to a session; separate tables handle 1-to-many relationships.
+This table is a one page representation of the casting registers. It is concerned with the data that have a relation 1-1 to a session; separate tables handle 1-to-many relationships.
 
 - PK: id
 - FK: register_id (registers), verification (verification_states)
@@ -87,7 +87,7 @@ This table comes from the recipe database. It describes the plays played at the 
 
 **authorships**
 
-This table is also stitched from the base of recipes. It links the authors (people) and the pieces. The choice was made to use an array to do this due to the fact that some pieces have multiple authors.
+This table is also related to the receipts table. It links the authors (people) and plays. The choice was made to use an array to do this due to the fact that some plays have multiple authors.
 
 - PK: id
 - FK: ext_id (people), play_id (plays)
@@ -95,7 +95,7 @@ This table is also stitched from the base of recipes. It links the authors (peop
 
 **register_plays**
 
-This table, taken from the base of recipes, associates parts with registers (and therefore with dates).
+This table, taken from the base of receipts, associates parts with registers (and therefore with dates).
 
 PK: id
 FK: play_id (plays), register_id (registers)*
@@ -111,7 +111,7 @@ _Notes:_
 
 **feux_plays**
 
-This painting associates the fires (the sessions) with the pieces performed.
+This painting associates the casting registers (the sessions) with the plays performed.
 
 - PK: id
 - FK: feux_id (feux), play_id (plays), lieu_id (lieux)

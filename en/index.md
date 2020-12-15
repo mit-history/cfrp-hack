@@ -14,7 +14,7 @@ The purpose of the **Comédie Française Registers Project** is to capture data 
 - [Casting Registers](https://www.cfregisters.org/fr/registres/registres-des-feux) and
 - [Expense Registers](https://www.cfregisters.org/fr/registres/registres-des-dépenses).
 
-The project is also working on recipes from the 19th century, as well as those from the 17th and 18th centuries. The registers themselves are kept in volumes linked to the archives of the theater of the Comédie Française (CF) in Paris. This data was entered "by hand", using an online data entry application.
+The project is also working on receipts from the 19th century, as well as those from the 17th and 18th centuries. The registers themselves are kept in volumes linked to the archives of the theater of the Comédie Française (CF) in Paris. This data was entered "by hand", using an online data entry application.
 
 This website provides documentation for the use of the data so entered from each of these sets of records.
 
