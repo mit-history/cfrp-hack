@@ -17,9 +17,7 @@ permalink: /fr/feux/
 </details>
 
 
-## Overview
-
-### Intro -  bases de données relationnelles
+## Intro -  bases de données relationnelles
 
 Une base de données relationnelle est une structure qui permet d’organiser des informations rangées en tableaux  (parfois appelés ‘relations’). Les colonnes de chaque tableau décrivent les attributs (on les appelle parfois aussi des ‘champs’) des données qu’il contient. Chaque rangée est un n-uplet qui contient les attributs spécifiés par l’ensemble de colonnes.
 
@@ -29,20 +27,20 @@ On relie les tableaux par des rapports de clé étrangère, ce qui veut dire qu�
 
 Veuillez ne pas tenir compte du mélange atroce de conventions d’appellation...
 
-### Description des tableaux
+## Description des tableaux
 
 La base de données comprend quatorze tableaux. Neuf d’entre eux sont nouveaux, et cinq viennent de la base des recettes. Lors de la saisie, de nouvelles données ont été ajoutées à certains de ces tableaux, donc ils ne correspondent plus aux versions originales. La fonction, les attributs importants, et les schémas entité-association des tableaux suivent :
 
 - Clé primaire = CP
 - Clé étrangere = CE
 
-#### people
+###  people
 
 Ce tableau vient de la base des recettes. Il décrit les personnes (non seulement les comédiens) de la CF
 
 - CP: id
 
-#### acteurs
+###  acteurs
 
 Ce tableau contient la liste complète des comédiens avec des informations permettant de les identifier. Les nouveaux ajouts sont caractérisés par un manque de ‘people_id’
 
@@ -57,13 +55,13 @@ Pendant que nous puissions calculer la dernière apparition d’un comédien (à
 
 
 
-#### registers
+###  registers
 
 Ce tableau provient de la base des recettes. Il donne les détails d’un registre de recettes.
 
 - CP: id
 
-#### feux
+###  feux
 
 Ce tableau est une représentation d’une page dans les registres des feux. Il se concerne avec les données qui ont un rapport 1-1 à une séance; des tableaux séparés s’occupent des rapports 1-à-plusieurs.
 
@@ -75,19 +73,19 @@ _Précisions:_
 - Les ‘annotations’ sont pour les notes/observations des chercheurs
 
 
-#### lieux
+###  lieux
 
 Ce tableau enregistre les lieux alternatifs quand des pièces se  jouent hors de théâtres de la CF.
 
 - CP: id
 
-#### plays
+###  plays
 
 Ce tableau provient de la base des recettes. Il décrit les pièces jouées à la CF - certaines nouvelles ont été ajoutées lors de la saisie des feux.
 
 - CP: id
 
-#### authorships
+###  authorships
 
 Ce tableau est aussi piqué de la base des recettes. Il met en lien les auteurs (personnes) et les pièces. Le choix a été fait d’utiliser un tableau pour ce faire en raison du fait que quelques pièces ont plusieurs auteurs.
 
@@ -95,7 +93,7 @@ Ce tableau est aussi piqué de la base des recettes. Il met en lien les auteurs 
 - CE: ext_id (people), play_id (plays)
 
 
-#### register_plays
+###  register_plays
 
 Ce tableau, pris de la base des recettes, associe des pièces à des registres (et donc à des dates).
 
@@ -110,7 +108,7 @@ _Précisions:_
 - Il n’était pas possible de faire la même chose pour le ‘register_id’ car il existe 4310 valeurs dans cette colonne qui ne sont pas présentes dans le tableau des registres
 - Cela ne devrait pas arriver: à suivre
 
-#### feux_plays
+###  feux_plays
 
 Ce tableau associe les feux (les séances) avec les pièces jouées.
 
@@ -118,14 +116,14 @@ Ce tableau associe les feux (les séances) avec les pièces jouées.
 - CE: feux_id (feux), play_id (plays), lieu_id (lieux)
 
 
-#### personnages
+###  personnages
 
 Ce tableau décrit les personnages qui appartiennent à chaque pièce. Le genre indique si c’est un rôle d’homme ou de femme; parfois, ce champ est null, lorsqu'il s’agit d’un d’un petit rôle.
 
 - CP: id
 - CE: play_id (plays)
 
-#### casting_records
+###  casting_records
 Ce tableau décrit pour chaque séance, qui joue quel rôle, dans quelle pièce.
 
 - CP: id
@@ -138,13 +136,13 @@ _Précisions:_
 - Le ‘role_id’ est null si nous avons que les noms des comédiens, et le ‘actor_id’ peut être null dans des cas où nous avons que la distribution
 
 
-#### user_permissions
+###  user_permissions
 
 Ce tableau décrit le modèle de permissions utilisé par l’outil. Il n’a rien à faire avec les données des registres.
 
 - CP: permission
 
-#### users
+###  users
 
 Ce tableau est utilisé pour les permissions dans l'interface. Ce tableau ne concerne pas les données.
 
@@ -152,13 +150,13 @@ Ce tableau est utilisé pour les permissions dans l'interface. Ce tableau ne con
 - CE: permission (user_permissions)
 
 
-#### verification_states
+###  verification_states
 
 Tableau de la base des recettes. Décrit les états possible d’une entrée.
 
 - CP: id
 
-### Hébergement et Pile Technologique
+## Hébergement et Pile Technologique
 Toutes les applications de l’univers rcf sont hébergés sur le serveur de Compute Canada (app.cfregisters.uvic.ca)
 - OS : ubuntu (linux)
 - Serveur web: nginx
