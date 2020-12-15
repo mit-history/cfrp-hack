@@ -46,7 +46,7 @@ This table contains the complete list of actors with information to identify the
 - PK: id
 - FK: people_id (people)
 
-_Notes:_
+#### Notes:
 - The "status_osp" indicates whether the actor held the rank of occasional, boarder, or member
 - Usually an actor has only one beginning, but sometimes there are several - hence the type list
 - While we can calculate the last appearance of a comedian (within our period), it is only the members who have an official 'start'
@@ -65,7 +65,7 @@ This table is a one page representation of the casting registers. It is concerne
 - PK: id
 - FK: register_id (registers), verification (verification_states)
 
-_Notes:_
+#### Notes:
 - The "notes" field and for additional notes present in the registers themselves
 - The 'annotations' are for the notes / observations of the researchers
 
@@ -98,7 +98,7 @@ FK: play_id (plays), register_id (registers)*
 
 _*this one is not 'official' in the database diagram_
 
-_Notes:_
+#### Notes:
 
 - The foreign key constraint between this table and the plays table has been added only in the casting table
 - It was not possible to do the same for the 'register_id' because there are 4310 values in this column which are not present in the registers table.
@@ -127,7 +127,7 @@ This table describes for each session, who plays which role, in which room.
 - FK: feux_play_id (feux), role_id (personnages), actor_id (acteurs)
 
 
-Notes:
+#### Notes:
 - Sometimes (we're not sure why) comedians are written in the center of the page instead of on the right; the 'in_middle' boolean is our way of noting these cases.
 - The values of "start" and "restart" are true only when these events are noted in the registers (not because of our observations).
 - The 'role_id' is null if we only have the names of the actors, and the 'actor_id' can be null in cases where we have the cast
