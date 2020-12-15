@@ -45,7 +45,7 @@ Ce tableau vient de la base des recettes. Il décrit les personnes (non seulemen
 Ce tableau contient la liste complète des comédiens avec des informations permettant de les identifier. Les nouveaux ajouts sont caractérisés par un manque de ‘people_id’
 
 - CP: id
-- - CE: people_id (people)
+- CE: people_id (people)
 
 _Précisions:_
 
@@ -132,7 +132,6 @@ _Précisions:_
 - Parfois (nous ne savons pas trop pourquoi) des comédiens sont écrit au centre de la page au lieu d’être à la droite; le boolean ‘in_middle’ est notre moyen de noter ces cas.
 - Les valeurs de ‘debut’ et ‘reprise’ sont vrais que quand ces événements sont notés dans les registres (non en raison de nos observations).
 - Le ‘role_id’ est null si nous avons que les noms des comédiens, et le ‘actor_id’ peut être null dans des cas où nous avons que la distribution
-
 
 ###  user_permissions
 
