@@ -4,7 +4,7 @@ lang: en
 nav_order: 3
 title: Casting Registers
 parent: English Version
-
+nav_exclude: true
 permalink: /en/feux/
 ---
 

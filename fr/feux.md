@@ -4,6 +4,7 @@ lang: fr
 nav_order: 3
 title: Les Registres des Feux
 parent: Version Française
+nav_exclude: true
 permalink: /fr/feux/
 ---
 
