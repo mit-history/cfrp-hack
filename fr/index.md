@@ -11,9 +11,9 @@ redirect_from: "/"
 
 Le projet des **Registres de la Comédie Française** a pour objectif la saisie des données numériques à partir des registres de la Comédie Française:
 
-- [Les registres des recettes](https://www.cfregisters.org/fr/registres/registres-des-recettes)
-- [Les registres des feux](https://www.cfregisters.org/fr/registres/registres-des-feux) et
-- [Les registres des dépenses](https://www.cfregisters.org/fr/registres/registres-des-dépenses).
+- [Les registres des recettes](https://www.cfregisters.org/#!/registres/dix-huitième/recettes)
+- [Les registres des feux](https://www.cfregisters.org/#!/registres/dix-huitième/feux) et
+- [Les registres des dépenses](https://www.cfregisters.org/#!/registres/dix-huitième/dépenses).
 
 Le projet travaille également sur les recettes du 19e siècle, ainsi que celles des 17e et 18e siècles. Les registres eux-mêmes sont conservés en volumes reliés aux archives du théâtre de la Comédie Française (CF) à Paris. Ces données ont été saisies "à la main", à l'aide d'une application de saisie de données en ligne.
 
