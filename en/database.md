@@ -26,7 +26,7 @@ This page is mostly for developer reference. It will be more common to work with
 
 ## Tables
 
-Below find a list of the most relevant tables in the CFRP database, with most of their relevant fields. Omitted are adminstrative tables, timestamp columns, and similar plumbing.
+Below find a list of the most relevant tables in the CFRP database, with most of their relevant fields. Omitted are administrative tables, timestamp columns, and similar plumbing.
 
 ### Registers
 
