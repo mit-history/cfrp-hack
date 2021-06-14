@@ -19,8 +19,8 @@ Le projet travaille également sur les recettes du 19e siècle, ainsi que celles
 
 Ce site web présente la documentation pour l'utilisation des données ainsi saisies à partir chacun de ces ensembles de registres.
 
-- [Registres des Recettes](/fr/les-recettes/)
-- [Casting Registers](/fr/feux/)
+- [Registres des recettes](/fr/les-recettes/)
+- [Registres des feux](/fr/feux/)
 
 ### Les Éditions
 
@@ -29,4 +29,4 @@ La scène française en ligne, 1680-1793*](https://cfrp.mitpress.mit.edu/).
 
 ## Veuillez bien contribuer à cette documentation!
 
-[Les "pull requests" sont les bienvenues!](https://github.com/mit-history/cfrp-hack)
+[Les « pull requests » sont les bienvenues!](https://github.com/mit-history/cfrp-hack)
