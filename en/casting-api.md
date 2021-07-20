@@ -27,7 +27,11 @@ This API is designed to supplement that of the receipt registers. To that end, w
 
 There are eight endpoints available at [api-feux.cfregisters.org]("api-feux.cfregisters.org").
 
+<<<<<<< HEAD
 Each allows the user to fetch the complete list of entities or to fetch a single instance via an optional id URL parameter. Various additional parameters included in the body of the request, as described below, allow for more detailed filtering. All filters are conjunctive (AND) and can be used in conjunction with basic or parameterized URLs.
+=======
+Each allows the user to fetch the complete list of entities or to fetch a single instance via an optional id URL parameter. Various additional parameters included in the body of the request, as described below, allow for more detailed filtering. All filters are conjunctive (AND).
+>>>>>>> f1d7d63... feux api inital
 
 ### Actors
 
@@ -44,7 +48,11 @@ GET https://api-feux.cfregisters.org/actors
 
 ```
 
+<<<<<<< HEAD
 *Response*
+=======
+*Example Response*
+>>>>>>> f1d7d63... feux api inital
 
 
 ```
@@ -119,6 +127,7 @@ GET https://api-feux.cfregisters.org/actors/357
 
 ```
 
+<<<<<<< HEAD
 ### Authors
 
 This endpoint allows access to the list of authors of the plays performed between 1765 and 1793. As with plays, there are people above an beyond the list available through the receipts API. It should also be noted that the "id" field given here corresponds to the "ext_id" returned by the receipts API.
@@ -182,6 +191,8 @@ GET https://api-feux.cfregisters.org/authors/115
 ]
 ```
 
+=======
+>>>>>>> f1d7d63... feux api inital
 
 ### Plays
 
@@ -199,7 +210,11 @@ GET https://api-feux.cfregisters.org/plays
 
 ```
 
+<<<<<<< HEAD
 *Response*
+=======
+*Example Response*
+>>>>>>> f1d7d63... feux api inital
 
 ```
 [
@@ -273,14 +288,21 @@ There are two possible body parameters:
 
 - author_id
   - *type*: integer
+<<<<<<< HEAD
+=======
+  - *default*: null
+>>>>>>> f1d7d63... feux api inital
   - filters to return only plays by a specific author
 - full
   - *type*: boolean
   - *default*: false
   - if enabled, returns a response with full details in place of identifiers
 
+<<<<<<< HEAD
 
 <br>
+=======
+>>>>>>> f1d7d63... feux api inital
 Example configuration and corresponding response:
 
 ```
@@ -316,6 +338,7 @@ Example configuration and corresponding response:
 ]
 ```
 
+<<<<<<< HEAD
 ### Roles
 
 This endpoint gives access to all the roles performed during the relevant period (1765-1793).
@@ -1458,3 +1481,17 @@ Example configurations and corresponding responses:
 ```
 
 Due to the volume of data, running the basic (unfiltered) request with 'full' enabled is not recommended.
+=======
+
+### Authors
+
+### Roles
+
+### Locations
+
+### Sessions
+
+### Performances
+
+### Interpretations
+>>>>>>> f1d7d63... feux api inital
