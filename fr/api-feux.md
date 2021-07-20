@@ -19,7 +19,7 @@ permalink: /fr/feux/api.html
 
 ## Survol
 
-L’API JSON est le moyen privilégié d’accéder aux données des registres des feux en raison du fait qu’il se sert de la version la plus récente de la base de données.
+L’API REST est le moyen privilégié d’accéder aux données des registres des feux en raison du fait qu’il se sert de la version la plus récente de la base de données.
 
 Cette api complète celle des recettes et donc, bien qu’il soit impossible d’éviter une certaine duplication, elle se concentre sur les données propres aux feux. Par conséquent, elle n’offre pas un moyen d’accéder aux donnés qui portent sur les ventes de billets ou la recette journalière; pour obtenir ces informations-là, voir [l’API des recettes](“/fr/recettes/api.html”)
 
