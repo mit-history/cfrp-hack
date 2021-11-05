@@ -27,6 +27,12 @@ Ce site web présente la documentation pour l'utilisation des données ainsi sai
 Ces données ont été utilisées dans un ouvrage publié par la MIT Press, intitulé: [*Bases de données, revenus et répertoire
 La scène française en ligne, 1680-1793*](https://cfrp.mitpress.mit.edu/).
 
+### Licence
+
+Le programme RCF défend une politique de libre accès. Toutes nos données et ressources sont mises à disposition du public sous la [ Licence Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 non transposé](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr). Si vous vous en servez pour un projet ou en salle de classe, on aimerait bien [vous entendre](mailto:info@cfregisters.org)!
+
+<a href="" target="_blank">![https://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr](https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)</a>
+
 ## Veuillez bien contribuer à cette documentation!
 
 [Les « pull requests » sont les bienvenues!](https://github.com/mit-history/cfrp-hack)

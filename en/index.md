@@ -26,6 +26,12 @@ This website provides documentation for the use of the data so entered from each
 These data have been used in an book published by the MIT Press: [*Databases, Revenues, & Repertory
 The French Stage Online, 1680-1793*](https://cfrp.mitpress.mit.edu/).
 
+### Licensing
+
+The CFRP is committed to making our data available for public use. All CFRP data and resources are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/). If you are using our data for a project or in the classroom, we would love to [hear from you](mailto:info@cfregisters.org)!
+
+<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">![](https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)</a>
+
 ## Add to this documentation!
 
 [Pull requests welcome!](https://github.com/mit-history/cfrp-hack)
