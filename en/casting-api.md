@@ -25,7 +25,7 @@ This API is designed to supplement that of the receipt registers. To that end, w
 
 ## Endpoints
 
-There are eight endpoints available at [api-feux.cfregisters.org]("api-feux.cfregisters.org").
+There are eight endpoints available at [api-feux.cfregisters.org](https://api-feux.cfregisters.org).
 
 Each allows the user to fetch the complete list of entities or to fetch a single instance via an optional id URL parameter. Various additional parameters included in the body of the request, as described below, allow for more detailed filtering. All filters are conjunctive (AND) and can be used in conjunction with basic or parameterized URLs.
 
