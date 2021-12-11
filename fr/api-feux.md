@@ -25,7 +25,7 @@ Cette api complète celle des recettes et donc, bien qu’il soit impossible d�
 
 ## Points de terminaison
 
-Il existe huit points de terminaison disponibles à partir de [api-feux.cfregisters.org]("api-feux.cfregisters.org").
+Il existe huit points de terminaison disponibles à partir de [api-feux.cfregisters.org](https://api-feux.cfregisters.org/).
 
 Chaque point de terminaison permet de chercher la liste intégrale d’objets ou de trouver un seul en se servant du paramètre URL facultatif « id ». Des paramètres supplémentaires inclus dans le corps de la requête permettent de faire des recherches plus complexes. Tous filtres sont conjonctifs (ET) et peuvent s'utiliser avec les URL simples ou paramètrisés.
 
